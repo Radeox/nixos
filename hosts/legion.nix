@@ -1,8 +1,8 @@
-{
-  config,
-  lib,
-  modulesPath,
-  ...
+{ pkgs
+, config
+, lib
+, modulesPath
+, ...
 }:
 {
   # Hostname
@@ -12,7 +12,7 @@
 
   boot = {
     # Kernel modules
-    kernelModules = [ "nvidia" ];
+    kernelModules = [ "nvidia" "msr" ];
 
     # Add legion module
     extraModulePackages = [ config.boot.kernelPackages.lenovo-legion-module ];
@@ -69,6 +69,15 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+  # Enable NVIDIA container toolkit
+  hardware.nvidia-container-toolkit.enable = true;
+
+  # Cuda packages
+  environment.systemPackages = with pkgs; [
+    cudaPackages.cudatoolkit
+    cudaPackages.cudnn
+  ];
 
   # Enable zram swap
   zramSwap.enable = true;
