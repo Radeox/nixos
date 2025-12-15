@@ -83,7 +83,6 @@
           "left" = [
             "dashboard"
             "workspaces"
-            "windowtitle"
           ];
           "middle" = [ ];
           "right" = [ ];
@@ -92,7 +91,6 @@
           "left" = [
             "dashboard"
             "workspaces"
-            "windowtitle"
           ];
           "middle" = [ ];
           "right" = [ ];
