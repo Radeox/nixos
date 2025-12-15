@@ -1,8 +1,7 @@
-{
-  config,
-  lib,
-  modulesPath,
-  ...
+{ config
+, lib
+, modulesPath
+, ...
 }:
 {
   # Hostname
@@ -15,6 +14,7 @@
     kernelModules = [
       "amdgpu"
       "kvm-amd"
+      "msr"
     ];
 
     initrd = {
