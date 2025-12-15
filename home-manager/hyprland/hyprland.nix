@@ -196,11 +196,11 @@
         "$mod SHIFT, 0, movetoworkspace, 10"
 
         # Scratchpad
-        "$mod, ESCAPE, togglespecialworkspace, scratch"
-        "$mod SHIFT, ESCAPE, movetoworkspace, special:scratch"
+        "$mod, GRAVE, togglespecialworkspace, scratch"
+        "$mod SHIFT, GRAVE, movetoworkspace, special:scratch"
 
         # Toggle floating
-        "$mod, GRAVE, togglefloating,"
+        "$mod, ESCAPE, togglefloating,"
 
         # Toggle split direction
         "$mod, E, togglesplit,"

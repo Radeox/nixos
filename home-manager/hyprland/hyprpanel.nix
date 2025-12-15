@@ -27,8 +27,17 @@
       "bar.launcher.icon" = "";
       "bar.media.show_active_only" = true;
       "bar.network.label" = true;
+      "bar.workspaces.ignored" = "-[0-9]";
       "bar.workspaces.numbered_active_indicator" = "color";
-      "bar.workspaces.show_numbered" = true;
+      "bar.workspaces.showApplicationIcons" = true;
+      "bar.workspaces.showWsIcons" = true;
+      "bar.workspaces.show_numbered" = false;
+
+      # Hide some systray icons
+      "bar.systray.ignore" = [
+        "blueman"
+        "nm-applet"
+      ];
 
       # Menu customization
       "menus.clock.time.military" = true;
