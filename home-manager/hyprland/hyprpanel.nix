@@ -65,7 +65,6 @@
           "left" = [
             "dashboard"
             "workspaces"
-            "windowtitle"
           ];
           "middle" = [
             "clock"
