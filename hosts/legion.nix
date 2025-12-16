@@ -73,12 +73,6 @@
   # Enable NVIDIA container toolkit
   hardware.nvidia-container-toolkit.enable = true;
 
-  # Cuda packages
-  environment.systemPackages = with pkgs; [
-    cudaPackages.cudatoolkit
-    cudaPackages.cudnn
-  ];
-
   # Enable zram swap
   zramSwap.enable = true;
   swapDevices = [ ];
