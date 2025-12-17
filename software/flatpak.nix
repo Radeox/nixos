@@ -14,6 +14,7 @@
       "app.zen_browser.zen"
       "com.getpostman.Postman"
       "com.github.tchx84.Flatseal"
+      "com.heroicgameslauncher.hgl"
       "com.mongodb.Compass"
       "com.spotify.Client"
       "com.valvesoftware.Steam"
