@@ -12,6 +12,9 @@
     dbus.enable = true;
     tumbler.enable = true;
 
+    # Power services
+    upower.enable = true;
+
     # Thermald
     thermald.enable = true;
 
