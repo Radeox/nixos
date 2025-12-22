@@ -6,7 +6,7 @@
     # Auto-update
     update.auto = {
       enable = true;
-      onCalendar = "weekly";
+      onCalendar = "daily";
     };
 
     # Packages list
