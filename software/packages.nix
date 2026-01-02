@@ -48,6 +48,7 @@
     tree-sitter
     udiskie
     unzip
+    usbimager
     veracrypt
     wget
     whois
