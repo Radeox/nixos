@@ -36,7 +36,6 @@
       # Hide some systray icons
       "bar.systray.ignore" = [
         "blueman"
-        "nm-applet"
       ];
 
       # Menu customization

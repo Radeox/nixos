@@ -15,7 +15,7 @@
     home-manager.url = "github:nix-community/home-manager/master";
 
     # Secure boot
-    lanzaboote.url = "github:nix-community/lanzaboote/v0.4.3";
+    lanzaboote.url = "github:nix-community/lanzaboote/v1.0.0";
   };
 
   outputs =
