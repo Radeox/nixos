@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     aichat
+    android-tools
     ansible
     cargo
     cmake
