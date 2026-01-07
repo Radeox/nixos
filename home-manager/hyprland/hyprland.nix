@@ -4,9 +4,6 @@
   wayland.windowManager.hyprland = {
     enable = true;
 
-    # Disable Hyprland's systemd service to avoid conflicts
-    systemd.enable = false;
-
     settings = {
       # Startup applications
       exec-once = [
@@ -14,7 +11,6 @@
         "hyprctl setcursor Qogir-Manjaro-Dark 28"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
-        "polkit-gnome-authentication-agent-1"
       ];
 
       # Input configuration
