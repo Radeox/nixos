@@ -3,7 +3,6 @@
   # Hyprpanel configuration
   programs.hyprpanel = {
     enable = true;
-    systemd.enable = true;
 
     # Custom configuration settings
     settings = {
