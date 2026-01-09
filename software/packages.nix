@@ -53,6 +53,7 @@
     veracrypt
     wget
     whois
+    witr
     wl-clipboard
     zip
   ];
