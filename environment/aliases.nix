@@ -17,7 +17,7 @@
     rgrep = "rg";
     sl = "ls";
     sudo = "sudo ";
-    z = "zeditor .";
+    a = "antigravity .";
 
     # Basic commands
     cat = "bat -p";

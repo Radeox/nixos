@@ -4,7 +4,9 @@
     aichat
     android-tools
     ansible
+    antigravity-fhs
     cargo
+    chromium
     cmake
     dig
     duf
