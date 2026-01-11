@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   # Rofi configuration
   programs.rofi = {
@@ -24,7 +24,7 @@
     };
 
     # Everforest Theme
-    theme = builtins.toString (
+    theme = lib.mkForce (builtins.toString (
       pkgs.writeText "rofi-everforest.rasi" ''
         * {
           bg0: #2B3339;
@@ -159,6 +159,6 @@
           padding: 12px;
         }
       ''
-    );
+    ));
   };
 }

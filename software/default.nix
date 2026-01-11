@@ -3,7 +3,6 @@
   imports = [
     ./extra.nix
     ./flatpak.nix
-    ./fonts.nix
     ./hyprland.nix
     ./packages.nix
     ./python.nix

@@ -16,6 +16,9 @@
 
     # Secure boot
     lanzaboote.url = "github:nix-community/lanzaboote/v1.0.0";
+
+    # Stylix
+    stylix.url = "github:nix-community/stylix";
   };
 
   outputs =
@@ -24,6 +27,7 @@
     , lanzaboote
     , nix-flatpak
     , nixos-hardware
+    , stylix
     , ...
     }:
     {
@@ -42,6 +46,9 @@
             # Flatpak module
             nix-flatpak.nixosModules.nix-flatpak
 
+            # Stylix
+            stylix.nixosModules.stylix
+
             # Setup Home Manager
             home-manager.nixosModules.home-manager
             {
@@ -60,6 +67,7 @@
             ./hardware
             ./software
             ./system
+            ./theme
 
             # Host specific configuration
             ./hosts/legion.nix
@@ -77,6 +85,9 @@
             # Flatpak module
             nix-flatpak.nixosModules.nix-flatpak
 
+            # Stylix
+            stylix.nixosModules.stylix
+
             # Setup Home Manager
             home-manager.nixosModules.home-manager
             {
@@ -95,6 +106,7 @@
             ./hardware
             ./software
             ./system
+            ./theme
 
             # Host specific configuration
             ./hosts/monoco.nix

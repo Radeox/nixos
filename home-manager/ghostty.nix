@@ -5,7 +5,6 @@
     enableFishIntegration = true;
 
     settings = {
-      theme = "Everforest Dark Hard";
       font-size = 13;
       window-decoration = "none";
       resize-overlay = "never";
