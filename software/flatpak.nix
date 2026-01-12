@@ -19,7 +19,6 @@
       "com.spotify.Client"
       "com.valvesoftware.Steam"
       "io.ente.photos"
-      "io.github.tobagin.karere"
       "md.obsidian.Obsidian"
       "org.bleachbit.BleachBit"
       "org.gimp.GIMP"
