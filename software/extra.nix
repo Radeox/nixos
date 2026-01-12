@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
   # Enable and configure some additional programs
   programs = {
@@ -6,13 +6,7 @@
     fish.enable = true;
 
     # Help programs expecting FHS environment
-    nix-ld = {
-      enable = true;
-      libraries = with pkgs; [
-        # Add libraries as needed
-        libxcrypt
-      ];
-    };
+    nix-ld.enable = true;
 
     # Other stuff
     gamemode.enable = true;

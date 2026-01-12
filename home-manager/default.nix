@@ -7,7 +7,6 @@
     ./neovim.nix
     ./programs.nix
     ./shell.nix
-    # ./zed.nix
   ];
 
   # Enable Home Manager

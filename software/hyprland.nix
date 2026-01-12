@@ -11,4 +11,12 @@
     gdm.enable = true;
     gdm.wayland = true;
   };
+
+  security = {
+    # Enable polkit
+    polkit.enable = true;
+
+    # Enable Hyprland GNOME keyring
+    pam.services.hyprland.enableGnomeKeyring = true;
+  };
 }

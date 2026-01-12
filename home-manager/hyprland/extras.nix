@@ -16,6 +16,12 @@
   ];
 
   services = {
+    # Enable swww for wallpaper setting
+    swww.enable = true;
+
+    # Enable Hyprpolkit for graphical polkit authentication
+    hyprpolkitagent.enable = true;
+
     # Enable Hyprsunset for automatic screen temperature adjustment
     hyprsunset = {
       enable = true;
@@ -38,10 +44,10 @@
         };
     };
 
-    # Enable swww for wallpaper setting
-    swww.enable = true;
+  };
 
-    # Enable Hyprpolkit for graphical polkit authentication
-    hyprpolkitagent.enable = true;
+  # Hyprlock configuration
+  programs.hyprlock = {
+    enable = true;
   };
 }
