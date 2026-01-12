@@ -112,7 +112,8 @@
       "$fileManager" = "nautilus";
       "$browser" = "flatpak run app.zen_browser.zen";
       "$obsidian" = "flatpak run md.obsidian.Obsidian";
-      "$ferdium" = "flatpak run org.ferdium.Ferdium";
+      "$telegram" = "flatpak run org.telegram.desktop";
+      "$whatsapp" = "flatpak run io.github.tobagin.karere";
       "$mail" = "flatpak run org.mozilla.Thunderbird";
       "$spotify" = "flatpak run com.spotify.Client";
       "$menu" = "rofi -show drun";
@@ -129,7 +130,8 @@
         "$mod, T, exec, $terminal"
         "$mod, H, exec, $obsidian"
         "$mod, M, exec, $mail"
-        "$mod, J, exec, $ferdium"
+        "$mod, J, exec, $telegram"
+        "$mod, K, exec, $whatsapp"
         "$mod, N, exec, $spotify"
         "$mod, Y, exec, $fileManager"
         "$mod, B, exec, $browser"

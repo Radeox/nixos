@@ -19,9 +19,9 @@
       "com.spotify.Client"
       "com.valvesoftware.Steam"
       "io.ente.photos"
+      "io.github.tobagin.karere"
       "md.obsidian.Obsidian"
       "org.bleachbit.BleachBit"
-      "org.ferdium.Ferdium"
       "org.gimp.GIMP"
       "org.inkscape.Inkscape"
       "org.localsend.localsend_app"
@@ -29,6 +29,7 @@
       "org.onlyoffice.desktopeditors"
       "org.qbittorrent.qBittorrent"
       "org.raspberrypi.rpi-imager"
+      "org.telegram.desktop"
     ];
   };
 
