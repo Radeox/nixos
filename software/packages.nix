@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    aichat
     android-tools
     ansible
     antigravity-fhs
@@ -16,10 +15,11 @@
     ffmpeg
     fzf
     gcc
+    gemini-cli
     git
     git-extras
-    github-copilot-cli
     gnome-disk-utility
+    gnome-text-editor
     gnumake
     gparted
     grc
