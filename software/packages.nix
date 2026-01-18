@@ -50,6 +50,7 @@
     sshfs
     tree-sitter
     udiskie
+    ungoogled-chromium
     unzip
     usbimager
     veracrypt
