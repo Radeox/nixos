@@ -57,6 +57,7 @@
               home-manager.backupFileExtension = "backup";
               home-manager.users.radeox = {
                 imports = [
+                  stylix.homeModules.stylix
                   ./home-manager
                 ];
               };
@@ -67,7 +68,6 @@
             ./hardware
             ./software
             ./system
-            ./theme
 
             # Host specific configuration
             ./hosts/legion.nix
@@ -96,6 +96,7 @@
               home-manager.backupFileExtension = "backup";
               home-manager.users.radeox = {
                 imports = [
+                  stylix.homeModules.stylix
                   ./home-manager
                 ];
               };
@@ -106,7 +107,6 @@
             ./hardware
             ./software
             ./system
-            ./theme
 
             # Host specific configuration
             ./hosts/monoco.nix

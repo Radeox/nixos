@@ -1,12 +1,14 @@
 { ... }:
 {
   imports = [
+    ./environment.nix
     ./ghostty.nix
     ./git.nix
     ./hyprland
     ./neovim.nix
     ./programs.nix
     ./shell.nix
+    ./theme.nix
   ];
 
   # Enable Home Manager
