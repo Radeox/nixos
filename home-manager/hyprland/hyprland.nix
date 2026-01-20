@@ -55,7 +55,7 @@
           enabled = true;
           size = 3;
           passes = 1;
-          vibrancy = 0.1696;
+          vibrancy = 0.17;
         };
       };
 
@@ -204,6 +204,7 @@
 
         # Application switching
         "ALT, Tab, exec, $windowSwitcher"
+
         # Switch keyboard layout
         "ALT, SPACE, exec, hyprctl switchxkblayout next"
 
