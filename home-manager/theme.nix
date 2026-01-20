@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:
+{ pkgs, lib, ... }:
 {
   stylix = {
     enable = true;
@@ -35,7 +35,7 @@
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
-      gtk-theme = lib.mkForce "Adwaita:dark"; 
+      gtk-theme = lib.mkForce "Adwaita:dark";
     };
   };
 

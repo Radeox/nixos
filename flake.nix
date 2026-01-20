@@ -46,9 +46,6 @@
             # Flatpak module
             nix-flatpak.nixosModules.nix-flatpak
 
-            # Stylix
-            stylix.nixosModules.stylix
-
             # Setup Home Manager
             home-manager.nixosModules.home-manager
             {
@@ -84,9 +81,6 @@
 
             # Flatpak module
             nix-flatpak.nixosModules.nix-flatpak
-
-            # Stylix
-            stylix.nixosModules.stylix
 
             # Setup Home Manager
             home-manager.nixosModules.home-manager
