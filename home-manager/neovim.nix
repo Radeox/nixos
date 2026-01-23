@@ -12,8 +12,8 @@
     withNodeJs = true;
     withPython3 = true;
 
-    # Setup init.lua
-    extraLuaConfig = ''
+    # Setup init.lua for AstroNvim
+    initLua = ''
       local lazypath = vim.env.LAZY or vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
       if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
         -- stylua: ignore
