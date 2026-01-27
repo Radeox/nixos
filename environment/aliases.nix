@@ -17,7 +17,7 @@
     rgrep = "rg";
     sl = "ls";
     sudo = "sudo ";
-    a = "antigravity .";
+    a = "antigravity . && exit";
 
     # Basic commands
     cat = "bat -p";
