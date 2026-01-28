@@ -2,6 +2,7 @@
 {
   stylix = {
     enable = true;
+
     # Explicitly set dark mode
     polarity = "dark";
 
@@ -16,14 +17,17 @@
         package = pkgs.noto-fonts;
         name = "Noto Serif";
       };
+
       sansSerif = {
         package = pkgs.noto-fonts;
         name = "Noto Sans";
       };
+
       monospace = {
         package = pkgs.nerd-fonts.jetbrains-mono;
         name = "JetBrainsMono Nerd Font";
       };
+
       emoji = {
         package = pkgs.noto-fonts-color-emoji;
         name = "Noto Color Emoji";

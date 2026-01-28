@@ -5,7 +5,6 @@
     ansible
     antigravity-fhs
     cargo
-    chromium
     cmake
     dig
     duf
@@ -18,6 +17,7 @@
     gemini-cli
     git
     git-extras
+    gnome-calculator
     gnome-disk-utility
     gnome-text-editor
     gnumake
