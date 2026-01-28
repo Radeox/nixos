@@ -239,12 +239,12 @@
       };
 
       # Window rules
-      windowrulev2 = [
+      windowrule = [
         # Floating windows
-        "float, title:^(Picture-in-Picture)$"
-        "float, class:^(org.gnome.Calculator)$"
-        "float, class:^(org.pulseaudio.pavucontrol)$"
-        "float, class:^(.blueman-manager-wrapped)$"
+        "match:title ^(Picture-in-Picture)$, float on"
+        "match:class ^(org.gnome.Calculator)$, float on"
+        "match:class ^(org.pulseaudio.pavucontrol)$, float on"
+        "match:class ^(.blueman-manager-wrapped)$, float on"
       ];
 
       # Monitor configuration
