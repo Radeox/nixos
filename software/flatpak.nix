@@ -18,6 +18,7 @@
       "com.mongodb.Compass"
       "com.spotify.Client"
       "com.valvesoftware.Steam"
+      "io.ente.auth"
       "md.obsidian.Obsidian"
       "org.bleachbit.BleachBit"
       "org.gimp.GIMP"
