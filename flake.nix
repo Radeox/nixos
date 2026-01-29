@@ -5,20 +5,26 @@
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # Flatpak manager
-    nix-flatpak.url = "github:gmodena/nix-flatpak/latest";
+    # Manage dotfiles
+    home-manager.url = "github:nix-community/home-manager/master";
 
     # NixOS hardware configurations
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
-    # Manage dotfiles
-    home-manager.url = "github:nix-community/home-manager/master";
+    # Flatpak manager
+    nix-flatpak.url = "github:gmodena/nix-flatpak/latest";
 
     # Secure boot
-    lanzaboote.url = "github:nix-community/lanzaboote/v1.0.0";
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v1.0.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Stylix
-    stylix.url = "github:nix-community/stylix";
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -40,16 +46,19 @@
             # Lanzaboote - Secure boot
             lanzaboote.nixosModules.lanzaboote
 
-            # NixOS hardware configuration for Lenovo Legion 5
+            # NixOS hardware config for Lenovo Legion 5
             nixos-hardware.nixosModules.lenovo-legion-16iah7h
 
             # Flatpak module
             nix-flatpak.nixosModules.nix-flatpak
 
-            # Setup Home Manager
+            # Stylix - Theme manager
+            stylix.nixosModules.stylix
+
+            # Home Manager - Manage dotfiles
             home-manager.nixosModules.home-manager
             {
-              home-manager.useGlobalPkgs = true;
+              home-manager.useGlobalPkgs = false;
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "backup";
               home-manager.users.radeox = {
@@ -82,10 +91,13 @@
             # Flatpak module
             nix-flatpak.nixosModules.nix-flatpak
 
+            # Stylix - Theme manager
+            stylix.nixosModules.stylix
+
             # Setup Home Manager
             home-manager.nixosModules.home-manager
             {
-              home-manager.useGlobalPkgs = true;
+              home-manager.useGlobalPkgs = false;
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "backup";
               home-manager.users.radeox = {
