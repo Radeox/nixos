@@ -4,6 +4,7 @@
     android-tools
     ansible
     antigravity-fhs
+    awscli2
     cargo
     cmake
     dig
