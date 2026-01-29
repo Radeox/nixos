@@ -36,6 +36,7 @@
     nix-search-cli
     nmap
     nodejs_22
+    opentofu
     pciutils
     php84
     qogir-icon-theme
