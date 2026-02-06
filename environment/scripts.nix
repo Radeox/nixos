@@ -14,7 +14,7 @@ let
   # Docker cleaning - Removes every container, image, and volume
   docker-clean = pkgs.writeShellScriptBin "docker-clean" ''
     docker rmi $(docker images -qa) -f
-    docker system prune --all --force && docker rmi --all
+    docker system prune --all --force
   '';
 
   # Retrive the IP address
