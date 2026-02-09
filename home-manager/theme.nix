@@ -10,7 +10,7 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
 
     # Enable Flatpak support for GTK applications
-    targets.gtk.flatpakSupport.enable = true;
+    targets.gtk.flatpakSupport.enable = false;
 
     fonts = {
       serif = {
