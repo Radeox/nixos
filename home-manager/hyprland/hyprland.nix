@@ -156,6 +156,9 @@
         # Color picker
         "$mod SHIFT, C, exec, hyprpicker -a"
 
+        # Calculator
+        ", XF86Calculator, exec, gnome-calculator"
+
         # Focus movement
         "$mod, LEFT, movefocus, l"
         "$mod, RIGHT, movefocus, r"

@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   services = {
     # Enable touchpad support
@@ -9,8 +9,12 @@
 
     # Enable Samba shares and other stuff
     gvfs.enable = true;
-    dbus.enable = true;
     tumbler.enable = true;
+
+    dbus = {
+      enable = true;
+      packages = [ pkgs.gcr ];
+    };
 
     # Power services
     upower.enable = true;
@@ -34,4 +38,7 @@
     # Enable GNOME keyring
     gnome.gnome-keyring.enable = true;
   };
+
+  # Helps with file secrets/previews
+  programs.gnome-terminal.enable = true;
 }

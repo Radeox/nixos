@@ -20,7 +20,6 @@
       "com.valvesoftware.Steam"
       "io.ente.auth"
       "md.obsidian.Obsidian"
-      "org.bleachbit.BleachBit"
       "org.gimp.GIMP"
       "org.inkscape.Inkscape"
       "org.localsend.localsend_app"

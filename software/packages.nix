@@ -5,14 +5,17 @@
     ansible
     antigravity-fhs
     awscli2
+    bleachbit
     cargo
     cmake
     dig
     duf
     dust
+    evince
     fastfetch
     fd
     ffmpeg
+    file-roller
     fzf
     gcc
     gemini-cli
@@ -28,9 +31,9 @@
     htop
     imagemagick
     killall
+    loupe
     mariadb.client
     mongodb-tools
-    mpv
     nautilus
     nautilus-python
     nil
@@ -47,6 +50,7 @@
     ripgrep
     rpiboot
     scrcpy
+    showtime
     simple-scan
     speedtest-cli
     sshfs
@@ -56,6 +60,7 @@
     unzip
     usbimager
     veracrypt
+    vlc
     wget
     whois
     witr
