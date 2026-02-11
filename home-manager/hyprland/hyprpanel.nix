@@ -28,9 +28,9 @@
       "bar.network.label" = true;
       "bar.workspaces.ignored" = "-[0-9]";
       "bar.workspaces.numbered_active_indicator" = "color";
-      "bar.workspaces.showApplicationIcons" = true;
-      "bar.workspaces.showWsIcons" = true;
-      "bar.workspaces.show_numbered" = false;
+      "bar.workspaces.showApplicationIcons" = false;
+      "bar.workspaces.showWsIcons" = false;
+      "bar.workspaces.show_numbered" = true;
 
       # Hide some systray icons
       "bar.systray.ignore" = [
@@ -40,7 +40,7 @@
       # Menu customization
       "menus.clock.time.military" = true;
       "menus.clock.weather.enabled" = false;
-      "menus.dashboard.controls.enabled" = true;
+      "menus.dashboard.controls.enabled" = false;
       "menus.dashboard.powermenu.avatar.image" = "/home/radeox/Documents/Pictures/Avatars/hacking.png";
       "menus.dashboard.shortcuts.enabled" = true;
       "menus.dashboard.stats.enabled" = false;
@@ -70,6 +70,7 @@
           "right" = [
             "media"
             "volume"
+            "kbinput"
             "network"
             "bluetooth"
             "battery"

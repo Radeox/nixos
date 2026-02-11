@@ -20,7 +20,7 @@
         kb_model = "";
 
         # CapsLock to Escape
-        kb_options = "caps:escape";
+        kb_options = "grp:alt_space_toggle,caps:escape";
 
         # Enable NumLock by default
         numlock_by_default = true;
