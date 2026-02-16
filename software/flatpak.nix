@@ -15,13 +15,10 @@
       "com.getpostman.Postman"
       "com.github.tchx84.Flatseal"
       "com.heroicgameslauncher.hgl"
-      "com.mongodb.Compass"
       "com.spotify.Client"
       "com.valvesoftware.Steam"
       "io.ente.auth"
       "md.obsidian.Obsidian"
-      "org.gimp.GIMP"
-      "org.inkscape.Inkscape"
       "org.localsend.localsend_app"
       "org.mozilla.Thunderbird"
       "org.onlyoffice.desktopeditors"
@@ -32,8 +29,6 @@
   };
 
   environment.shellAliases = {
-    gimp = "flatpak run org.gimp.GIMP";
-    inkscape = "flatpak run org.inkscape.Inkscape";
     obsidian = "flatpak run md.obsidian.Obsidian";
     zen = "flatpak run app.zen_browser.zen";
   };

@@ -4,6 +4,7 @@
     # Setup MIME
     mimeApps = {
       enable = true;
+
       defaultApplications = {
         # HTML and Browser
         "text/html" = [ "app.zen_browser.zen.desktop" ];
@@ -64,5 +65,6 @@
 
   home.sessionVariables = {
     DEFAULT_BROWSER = "flatpak run app.zen_browser.zen";
+    gnome_keyring_control = "/run/user/1000/keyring";
   };
 }

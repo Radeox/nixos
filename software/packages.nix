@@ -19,6 +19,7 @@
     fzf
     gcc
     gemini-cli
+    gimp
     git
     git-extras
     gnome-calculator
@@ -30,9 +31,11 @@
     home-manager
     htop
     imagemagick
+    inkscape
     killall
     loupe
     mariadb.client
+    mongodb-compass
     mongodb-tools
     nautilus
     nautilus-python
@@ -50,6 +53,7 @@
     ripgrep
     rpiboot
     scrcpy
+    seahorse
     showtime
     simple-scan
     speedtest-cli
