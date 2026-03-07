@@ -37,7 +37,7 @@ let
       nmcli connection down "$VPN_NAME"
     else
       echo "VPN is inactive → connecting..."
-      nmcli connection up "$VPN_NAME"
+      nmcli connection up "$VPN_NAME" --ask
     fi
   '';
 
@@ -52,7 +52,7 @@ let
       nmcli connection down "$VPN_NAME"
     else
       echo "VPN is inactive → connecting..."
-      nmcli connection up "$VPN_NAME"
+      nmcli connection up "$VPN_NAME" --ask
     fi
   '';
 in
