@@ -42,10 +42,10 @@
     nil
     nix-search-cli
     nmap
-    nodejs_22
+    nodejs_24
     opentofu
     pciutils
-    php84
+    php85
     qogir-icon-theme
     quickemu
     rar
