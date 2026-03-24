@@ -70,5 +70,21 @@
     witr
     wl-clipboard
     zip
+
+    # Python
+    isort
+    python314
+    ruff
+    uv
+    uv-sort
+
+    # VPN
+    openvpn
+    wireguard-tools
+  ];
+
+  # Add OpenVPN plugin to NetworkManager
+  networking.networkmanager.plugins = [
+    pkgs.networkmanager-openvpn
   ];
 }

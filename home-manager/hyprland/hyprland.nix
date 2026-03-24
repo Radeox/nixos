@@ -85,9 +85,7 @@
 
       # Layout settings
       dwindle = {
-        pseudotile = true;
         preserve_split = true;
-        force_split = 2;
       };
 
       # Miscellaneous settings
@@ -204,11 +202,11 @@
         "$mod SHIFT, 0, movetoworkspace, 10"
 
         # Scratchpad
-        "$mod, GRAVE, togglespecialworkspace, scratch"
-        "$mod SHIFT, GRAVE, movetoworkspace, special:scratch"
+        "$mod, ESCAPE, togglespecialworkspace, scratch"
+        "$mod SHIFT, ESCAPE, movetoworkspace, special:scratch"
 
         # Toggle floating
-        "$mod, ESCAPE, togglefloating,"
+        "$mod, GRAVE, togglefloating,"
 
         # Toggle split direction
         "$mod, E, togglesplit,"
