@@ -85,6 +85,7 @@
 
       # Layout settings
       dwindle = {
+        force_split = 2;
         preserve_split = true;
       };
 
@@ -209,7 +210,7 @@
         "$mod, GRAVE, togglefloating,"
 
         # Toggle split direction
-        "$mod, E, togglesplit,"
+        "$mod, E, layoutmsg, togglesplit"
 
         # Application switching
         "ALT, Tab, exec, $windowSwitcher"
