@@ -2,7 +2,10 @@
 {
   hardware = {
     # Enable graphics drivers
-    graphics.enable = true;
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
 
     # Enable the Xbox One controller driver
     xone.enable = true;

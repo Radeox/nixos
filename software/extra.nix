@@ -9,7 +9,6 @@
     nix-ld.enable = true;
 
     # Other stuff
-    gamemode.enable = true;
     dconf.enable = true;
 
     # Nautilus extension to open terminal
