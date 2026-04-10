@@ -7,7 +7,7 @@
     settings = {
       # Startup applications
       exec-once = [
-        "swww-daemon &"
+        "awww-daemon &"
         "nm-applet"
         "hyprctl setcursor Qogir-Manjaro-Dark 28"
         "wl-paste --type text --watch cliphist store"

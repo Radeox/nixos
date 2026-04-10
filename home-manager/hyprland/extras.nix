@@ -16,8 +16,8 @@
   ];
 
   services = {
-    # Enable swww for wallpaper setting
-    swww.enable = true;
+    # Enable awww for wallpaper setting
+    awww.enable = true;
 
     # Enable Hyprpolkit for graphical polkit authentication
     hyprpolkitagent.enable = true;
