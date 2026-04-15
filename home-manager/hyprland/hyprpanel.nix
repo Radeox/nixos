@@ -17,8 +17,8 @@
       "theme.font.weight" = 800;
 
       # Module customization
-      "bar.battery.hideLabelWhenFull" = true;
-      "bar.battery.label" = false;
+      "bar.battery.hideLabelWhenFull" = false;
+      "bar.battery.label" = true;
       "bar.bluetooth.label" = false;
       "bar.clock.format" = "%H:%M:%S";
       "bar.clock.showIcon" = false;
