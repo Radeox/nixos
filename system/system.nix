@@ -1,8 +1,8 @@
 { pkgs, ... }:
 {
   boot = {
-    # Use 6.19 stock kernel
-    kernelPackages = pkgs.linuxPackages_6_19;
+    # Use latest zen kernel
+    kernelPackages = pkgs.linuxPackages_zen;
 
     # NTFS support
     supportedFilesystems = [ "ntfs" ];
