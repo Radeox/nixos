@@ -7,7 +7,7 @@
     polarity = "dark";
 
     # Apply everforest-dark-hard theme
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 
     # Enable Flatpak support for GTK applications
     targets.gtk.flatpakSupport.enable = false;
@@ -47,4 +47,10 @@
     GTK_THEME = lib.mkForce "Adwaita:dark";
     ADW_DEBUG_COLOR_SCHEME = lib.mkForce "prefer-dark";
   };
+
+  home.packages = with pkgs; [
+    qogir-icon-theme
+    rose-pine-icon-theme
+  ];
+
 }

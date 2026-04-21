@@ -46,7 +46,6 @@
     opentofu
     pciutils
     php85
-    qogir-icon-theme
     quickemu
     rar
     remmina

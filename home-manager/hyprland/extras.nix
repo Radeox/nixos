@@ -10,6 +10,7 @@
     hyprpicker
     networkmanagerapplet
     nwg-displays
+    nwg-look
     pavucontrol
     pyprland
     slurp
