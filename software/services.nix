@@ -61,22 +61,15 @@
         "app.zen_browser.zen"
         "com.getpostman.Postman"
         "com.github.tchx84.Flatseal"
-        "com.spotify.Client"
         "io.ente.auth"
-        "md.obsidian.Obsidian"
-        "org.localsend.localsend_app"
-        "org.mozilla.Thunderbird"
-        "org.onlyoffice.desktopeditors"
-        "org.qbittorrent.qBittorrent"
         "org.raspberrypi.rpi-imager"
-        "org.telegram.desktop"
       ];
     };
   };
 
   # Flatpak shell aliases
   environment.shellAliases = {
-    obsidian = "flatpak run md.obsidian.Obsidian";
+    obsidian = "obsidian";
     zen = "flatpak run app.zen_browser.zen";
   };
 

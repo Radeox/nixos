@@ -9,6 +9,7 @@
     cargo
     cmake
     dig
+    deluge
     duf
     dust
     evince
@@ -33,6 +34,7 @@
     imagemagick
     inkscape
     killall
+    localsend
     loupe
     mariadb.client
     mongodb-compass
@@ -43,6 +45,8 @@
     nix-search-cli
     nmap
     nodejs_24
+    obsidian
+    onlyoffice-desktopeditors
     opentofu
     pciutils
     php85
@@ -56,7 +60,10 @@
     showtime
     simple-scan
     speedtest-cli
+    spotify
     sshfs
+    telegram-desktop
+    thunderbird
     tree-sitter
     udiskie
     ungoogled-chromium

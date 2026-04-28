@@ -118,10 +118,10 @@
       "$terminal" = "ghostty";
       "$fileManager" = "nautilus";
       "$browser" = "flatpak run app.zen_browser.zen";
-      "$obsidian" = "flatpak run md.obsidian.Obsidian";
-      "$telegram" = "flatpak run org.telegram.desktop";
-      "$mail" = "flatpak run org.mozilla.Thunderbird";
-      "$spotify" = "flatpak run com.spotify.Client";
+      "$obsidian" = "obsidian";
+      "$telegram" = "Telegram";
+      "$mail" = "thunderbird";
+      "$spotify" = "spotify";
       "$menu" = "rofi -show drun";
       "$windowSwitcher" = "rofi -show window";
       "$powerMenu" = "rofi -show power-menu";
