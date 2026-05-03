@@ -33,7 +33,16 @@
     };
 
     # Niri Flake
-    niri.url = "github:sodiboo/niri-flake";
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # Monique
+    monique = {
+      url = "github:ToRvaLDz/monique";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -45,6 +54,7 @@
     , stylix
     , noctalia
     , niri
+    , monique
     , ...
     }:
     {
@@ -52,6 +62,7 @@
         # ----- Legion Nix configuration -----
         Legion-Nix = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
 
           modules = [
             # Lanzaboote - Secure boot
@@ -69,7 +80,7 @@
             # Home Manager - Manage dotfiles
             home-manager.nixosModules.home-manager
             {
-              home-manager.useGlobalPkgs = false;
+              home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "backup";
               home-manager.extraSpecialArgs = { inherit inputs; };
@@ -97,6 +108,7 @@
         # ----- Monoco configuration -----
         Monoco = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
 
           modules = [
             # Lanzaboote - Secure boot
@@ -111,7 +123,7 @@
             # Setup Home Manager
             home-manager.nixosModules.home-manager
             {
-              home-manager.useGlobalPkgs = false;
+              home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "backup";
               home-manager.extraSpecialArgs = { inherit inputs; };

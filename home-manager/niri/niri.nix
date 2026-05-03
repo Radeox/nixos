@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 {
   programs.niri = {
     enable = true;
@@ -6,7 +6,7 @@
     settings = {
       input = {
         keyboard.xkb.layout = "us,it";
-        keyboard.xkb.options = "grp:alt_space_toggle,caps:escape";
+        keyboard.xkb.options = "caps:escape";
         touchpad = {
           tap = true;
           dwt = true;
@@ -38,6 +38,11 @@
         { command = [ "wl-paste" "--type" "image" "--watch" "cliphist" "store" ]; }
       ];
 
+      # Disable hot corners
+      gestures = {
+        hot-corners.enable = false;
+      };
+
       binds = {
         # Launchers
         "Mod+T".action.spawn = "ghostty";
@@ -55,6 +60,9 @@
         "Mod+F".action.maximize-column = { };
         "Mod+Shift+F".action.fullscreen-window = { };
 
+        # Toggle overview
+        "Mod+D".action.toggle-overview = {};
+
         # App launcher (Noctalia)
         "Mod+Space".action.spawn = [ "noctalia-shell" "ipc" "call" "launcher" "toggle" ];
 
@@ -62,10 +70,10 @@
         "Mod+L".action.spawn = [ "noctalia-shell" "ipc" "call" "lockScreen" "lock" ];
 
         # Screenshots
-        "Mod+Shift+S".action.spawn = [ "grimblast" "copy" "area" ];
-        "Print".action.spawn = [ "grimblast" "copy" "screen" ];
+        "Mod+Shift+S".action.screenshot = { };
+        "Print".action.screenshot-screen = { };
 
-        # Clipboard history (using rofi for now as dmenu provider)
+        # Clipboard history
         "Mod+V".action.spawn = [ "noctalia-shell" "ipc" "call" "launcher" "clipboard" ];
 
         # Color picker
@@ -151,6 +159,9 @@
           open-floating = true;
         }
       ];
+
+      # Hide key overview
+      hotkey-overlay.skip-at-startup = true;
     };
   };
 }

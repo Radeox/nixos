@@ -4,11 +4,13 @@
     ./environment.nix
     ./ghostty.nix
     ./git.nix
+    ./monique.nix
     ./niri
     ./neovim.nix
     ./programs.nix
     ./shell.nix
     ./theme.nix
+    ./xwayland-satellite.nix
   ];
 
   # Enable Home Manager

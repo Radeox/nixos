@@ -36,7 +36,7 @@
         autoHideDelay = 500;
         autoShowDelay = 150;
         backgroundOpacity = 1;
-        barType = "simple";
+        barType = "framed";
         capsuleColorKey = "none";
         capsuleOpacity = 1;
         contentPadding = 2;
@@ -103,17 +103,6 @@
                     showBadge = true;
                     showLabelsOnlyWhenOccupied = true;
                     unfocusedIconsOpacity = 1;
-                }
-                {
-                    colorizeIcons = false;
-                    hideMode = "hidden";
-                    id = "ActiveWindow";
-                    maxWidth = 145;
-                    scrollingMode = "hover";
-                    showIcon = true;
-                    showText = true;
-                    textColor = "none";
-                    useFixedWidth = false;
                 }
             ];
             right = [
