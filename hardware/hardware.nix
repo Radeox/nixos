@@ -34,7 +34,4 @@
       extraBackends = [ pkgs.sane-airscan ];
     };
   };
-
-  # Enable GUI bluetooth manager
-  services.blueman.enable = true;
 }

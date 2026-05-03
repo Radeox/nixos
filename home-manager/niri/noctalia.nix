@@ -2,6 +2,7 @@
 {
   programs.noctalia-shell = {
     enable = true;
+
     settings = lib.mkForce {
       appLauncher = {
         autoPasteClipboard = false;
