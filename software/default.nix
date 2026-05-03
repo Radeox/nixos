@@ -3,7 +3,7 @@
   imports = [
     ./extra.nix
     ./gaming.nix
-    ./hyprland.nix
+    ./niri.nix
     ./packages.nix
     ./remote.nix
     ./services.nix

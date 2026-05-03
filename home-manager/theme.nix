@@ -9,6 +9,9 @@
     # Apply everforest-dark-hard theme
     base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 
+    # Enable GTK support
+    targets.gtk.enable = true;
+
     # Enable Flatpak support for GTK applications
     targets.gtk.flatpakSupport.enable = false;
 
@@ -33,19 +36,6 @@
         name = "Noto Color Emoji";
       };
     };
-  };
-
-  # Use mkForce to resolve the conflict with Stylix
-  dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
-      gtk-theme = lib.mkForce "Adwaita:dark";
-    };
-  };
-
-  home.sessionVariables = {
-    GTK_THEME = lib.mkForce "Adwaita:dark";
-    ADW_DEBUG_COLOR_SCHEME = lib.mkForce "prefer-dark";
   };
 
   home.packages = with pkgs; [

@@ -22,18 +22,29 @@
 
     # Stylix
     stylix = {
-      url = "github:nix-community/stylix";
+      url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Noctalia Shell
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # Niri Flake
+    niri.url = "github:sodiboo/niri-flake";
   };
 
   outputs =
-    { nixpkgs
+    inputs@{ nixpkgs
     , home-manager
     , lanzaboote
     , nix-flatpak
     , nixos-hardware
     , stylix
+    , noctalia
+    , niri
     , ...
     }:
     {
@@ -61,9 +72,12 @@
               home-manager.useGlobalPkgs = false;
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "backup";
+              home-manager.extraSpecialArgs = { inherit inputs; };
               home-manager.users.radeox = {
                 imports = [
                   stylix.homeModules.stylix
+                  noctalia.homeModules.default
+                  inputs.niri.homeModules.niri
                   ./home-manager
                 ];
               };
@@ -100,9 +114,12 @@
               home-manager.useGlobalPkgs = false;
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "backup";
+              home-manager.extraSpecialArgs = { inherit inputs; };
               home-manager.users.radeox = {
                 imports = [
                   stylix.homeModules.stylix
+                  noctalia.homeModules.default
+                  inputs.niri.homeModules.niri
                   ./home-manager
                 ];
               };

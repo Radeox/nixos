@@ -77,8 +77,8 @@
     # Enable polkit
     polkit.enable = true;
 
-    # Enable Hyprland GNOME keyring
-    pam.services.hyprland.enableGnomeKeyring = true;
+    # Enable Niri GNOME keyring
+    pam.services.niri.enableGnomeKeyring = true;
   };
 
   # Helps with file secrets/previews

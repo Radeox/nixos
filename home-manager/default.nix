@@ -4,7 +4,7 @@
     ./environment.nix
     ./ghostty.nix
     ./git.nix
-    ./hyprland
+    ./niri
     ./neovim.nix
     ./programs.nix
     ./shell.nix
