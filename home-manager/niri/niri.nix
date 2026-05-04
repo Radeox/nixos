@@ -14,12 +14,15 @@
       input = {
         keyboard.xkb.layout = "us,it";
         keyboard.xkb.options = "caps:escape";
+
         touchpad = {
           tap = true;
           dwt = true;
           natural-scroll = false;
         };
+
         mouse.accel-speed = 0.0;
+        focus-follows-mouse.enable = true;
       };
 
       layout = {
@@ -30,7 +33,11 @@
           { proportion = 1.0 / 2.0; }
           { proportion = 2.0 / 3.0; }
         ];
-        default-column-width = { proportion = 1.0; }; # First window opens at full width
+
+        default-column-width = {
+          proportion = 1.0;
+        };
+
         focus-ring = {
           enable = true;
           width = 2;
@@ -41,14 +48,27 @@
 
       spawn-at-startup = [
         { command = [ "noctalia-shell" ]; }
-        { command = [ "wl-paste" "--type" "text" "--watch" "cliphist" "store" ]; }
-        { command = [ "wl-paste" "--type" "image" "--watch" "cliphist" "store" ]; }
+        {
+          command = [
+            "wl-paste"
+            "--type"
+            "text"
+            "--watch"
+            "cliphist"
+            "store"
+          ];
+        }
+        {
+          command = [
+            "wl-paste"
+            "--type"
+            "image"
+            "--watch"
+            "cliphist"
+            "store"
+          ];
+        }
       ];
-
-      # Disable hot corners
-      gestures = {
-        hot-corners.enable = false;
-      };
 
       binds = {
         # Launchers
@@ -58,7 +78,11 @@
         "Mod+J".action.spawn = "Telegram";
         "Mod+N".action.spawn = "spotify";
         "Mod+Y".action.spawn = "nautilus";
-        "Mod+B".action.spawn = [ "flatpak" "run" "app.zen_browser.zen" ];
+        "Mod+B".action.spawn = [
+          "flatpak"
+          "run"
+          "app.zen_browser.zen"
+        ];
 
         # Close window
         "Mod+Q".action.close-window = { };
@@ -68,23 +92,44 @@
         "Mod+Shift+F".action.fullscreen-window = { };
 
         # Toggle overview
-        "Mod+D".action.toggle-overview = {};
+        "Mod+D".action.toggle-overview = { };
 
         # App launcher (Noctalia)
-        "Mod+Space".action.spawn = [ "noctalia-shell" "ipc" "call" "launcher" "toggle" ];
+        "Mod+Space".action.spawn = [
+          "noctalia-shell"
+          "ipc"
+          "call"
+          "launcher"
+          "toggle"
+        ];
 
         # Lock screen (Noctalia)
-        "Mod+L".action.spawn = [ "noctalia-shell" "ipc" "call" "lockScreen" "lock" ];
+        "Mod+L".action.spawn = [
+          "noctalia-shell"
+          "ipc"
+          "call"
+          "lockScreen"
+          "lock"
+        ];
 
         # Screenshots
         "Mod+Shift+S".action.screenshot = { };
         "Print".action.screenshot-screen = { };
 
         # Clipboard history
-        "Mod+V".action.spawn = [ "noctalia-shell" "ipc" "call" "launcher" "clipboard" ];
+        "Mod+V".action.spawn = [
+          "noctalia-shell"
+          "ipc"
+          "call"
+          "launcher"
+          "clipboard"
+        ];
 
         # Color picker
-        "Mod+Shift+C".action.spawn = [ "hyprpicker" "-a" ];
+        "Mod+Shift+C".action.spawn = [
+          "hyprpicker"
+          "-a"
+        ];
 
         # Focus movement
         "Mod+Left".action.focus-column-left = { };
@@ -97,6 +142,12 @@
         "Mod+Shift+Right".action.move-column-right = { };
         "Mod+Shift+Up".action.move-window-up-or-to-workspace-up = { };
         "Mod+Shift+Down".action.move-window-down-or-to-workspace-down = { };
+
+        # Move between monitors
+        "Mod+Ctrl+Left".action.focus-monitor-left = { };
+        "Mod+Ctrl+Right".action.focus-monitor-right = { };
+        "Mod+Ctrl+Up".action.focus-monitor-up = { };
+        "Mod+Ctrl+Down".action.focus-monitor-down = { };
 
         # Switch workspaces
         "Mod+1".action.focus-workspace = 1;
@@ -133,14 +184,43 @@
         "Alt+Space".action.switch-layout = "next";
 
         # Power menu (Noctalia)
-        "Mod+Shift+E".action.spawn = [ "noctalia-shell" "ipc" "call" "sessionMenu" "toggle" ];
+        "Mod+Shift+E".action.spawn = [
+          "noctalia-shell"
+          "ipc"
+          "call"
+          "sessionMenu"
+          "toggle"
+        ];
 
         # Audio/Brightness
-        "XF86AudioRaiseVolume".action.spawn = [ "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+" ];
-        "XF86AudioLowerVolume".action.spawn = [ "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-" ];
-        "XF86AudioMute".action.spawn = [ "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle" ];
-        "XF86MonBrightnessUp".action.spawn = [ "brightnessctl" "set" "+10%" ];
-        "XF86MonBrightnessDown".action.spawn = [ "brightnessctl" "set" "10%-" ];
+        "XF86AudioRaiseVolume".action.spawn = [
+          "wpctl"
+          "set-volume"
+          "@DEFAULT_AUDIO_SINK@"
+          "5%+"
+        ];
+        "XF86AudioLowerVolume".action.spawn = [
+          "wpctl"
+          "set-volume"
+          "@DEFAULT_AUDIO_SINK@"
+          "5%-"
+        ];
+        "XF86AudioMute".action.spawn = [
+          "wpctl"
+          "set-mute"
+          "@DEFAULT_AUDIO_SINK@"
+          "toggle"
+        ];
+        "XF86MonBrightnessUp".action.spawn = [
+          "brightnessctl"
+          "set"
+          "+10%"
+        ];
+        "XF86MonBrightnessDown".action.spawn = [
+          "brightnessctl"
+          "set"
+          "10%-"
+        ];
 
         # Resizing
         "Mod+BracketLeft".action.set-column-width = "-10%";
@@ -158,16 +238,21 @@
           clip-to-geometry = true;
         }
         {
-          matches = [{ title = "^Picture-in-Picture$"; }];
+          matches = [ { title = "^Picture-in-Picture$"; } ];
           open-floating = true;
         }
         {
-          matches = [{ app-id = "org.gnome.Calculator"; }];
+          matches = [ { app-id = "org.gnome.Calculator"; } ];
           open-floating = true;
         }
       ];
 
-      # Hide key overview
+      # Disable hot corners
+      gestures = {
+        hot-corners.enable = false;
+      };
+
+      # Extra
       hotkey-overlay.skip-at-startup = true;
     };
   };

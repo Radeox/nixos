@@ -26,15 +26,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Noctalia Shell
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Niri Flake
     niri = {
       url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # Noctalia Shell
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -46,16 +46,17 @@
   };
 
   outputs =
-    inputs@{ nixpkgs
-    , home-manager
-    , lanzaboote
-    , nix-flatpak
-    , nixos-hardware
-    , stylix
-    , noctalia
-    , niri
-    , monique
-    , ...
+    inputs@{
+      nixpkgs,
+      home-manager,
+      lanzaboote,
+      nix-flatpak,
+      nixos-hardware,
+      stylix,
+      noctalia,
+      niri,
+      monique,
+      ...
     }:
     {
       nixosConfigurations = {
