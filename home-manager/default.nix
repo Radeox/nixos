@@ -4,9 +4,8 @@
     ./environment.nix
     ./ghostty.nix
     ./git.nix
-    ./monique.nix
-    ./niri
     ./neovim.nix
+    ./niri
     ./programs.nix
     ./shell.nix
     ./theme.nix
