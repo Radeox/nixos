@@ -46,6 +46,11 @@
         };
       };
 
+      cursor = {
+        hide-when-typing = true;
+        hide-after-inactive-ms = 1000;
+      };
+
       spawn-at-startup = [
         { command = [ "noctalia-shell" ]; }
         {
