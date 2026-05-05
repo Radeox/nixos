@@ -22,6 +22,7 @@
         };
 
         mouse.accel-speed = 0.0;
+        focus-follows-mouse.enable = true;
       };
 
       layout = {
