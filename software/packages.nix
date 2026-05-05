@@ -6,10 +6,12 @@
     antigravity-fhs
     awscli2
     bleachbit
+    brightnessctl
     cargo
+    cliphist
     cmake
-    dig
     deluge
+    dig
     duf
     dust
     evince
@@ -31,6 +33,7 @@
     grc
     home-manager
     htop
+    hyprpicker
     imagemagick
     inkscape
     killall
@@ -45,6 +48,7 @@
     nix-search-cli
     nmap
     nodejs_24
+    nwg-look
     obsidian
     onlyoffice-desktopeditors
     opentofu
@@ -69,6 +73,7 @@
     ungoogled-chromium
     unzip
     usbimager
+    valent
     veracrypt
     vlc
     wget

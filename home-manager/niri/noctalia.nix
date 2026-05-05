@@ -166,6 +166,14 @@
               textColor = "none";
             }
             {
+              defaultSettings = {
+                activeColor = "primary";
+                refreshInterval = 5000;
+                showProfileLabel = false;
+              };
+              id = "plugin:monique";
+            }
+            {
               compactMode = true;
               diskPath = "/";
               iconColor = "none";
@@ -395,6 +403,64 @@
         position = "center";
         showHeader = true;
         showKeybinds = true;
+        powerOptions = [
+          {
+            action = "shutdown";
+            command = "";
+            countdownEnabled = true;
+            enabled = true;
+            keybind = "1";
+          }
+          {
+            action = "reboot";
+            command = "";
+            countdownEnabled = true;
+            enabled = true;
+            keybind = "2";
+          }
+          {
+            action = "suspend";
+            command = "";
+            countdownEnabled = true;
+            enabled = true;
+            keybind = "3";
+          }
+          {
+            action = "logout";
+            command = "";
+            countdownEnabled = true;
+            enabled = true;
+            keybind = "4";
+          }
+          {
+            action = "lock";
+            command = "";
+            countdownEnabled = true;
+            enabled = false;
+            keybind = "";
+          }
+          {
+            action = "hibernate";
+            command = "";
+            countdownEnabled = true;
+            enabled = false;
+            keybind = "";
+          }
+          {
+            action = "rebootToUefi";
+            command = "";
+            countdownEnabled = true;
+            enabled = false;
+            keybind = "";
+          }
+          {
+            action = "userspaceReboot";
+            command = "";
+            countdownEnabled = true;
+            enabled = false;
+            keybind = "";
+          }
+        ];
       };
       systemMonitor = {
         batteryCriticalThreshold = 5;
@@ -468,6 +534,27 @@
       };
       dock = {
         enabled = false;
+      };
+      plugins = {
+        autoUpdate = true;
+        notifyUpdates = false;
+      };
+    };
+
+    plugins = {
+      version = 2;
+      sources = [
+        {
+          enabled = true;
+          name = "Noctalia Plugins";
+          url = "https://github.com/noctalia-dev/noctalia-plugins";
+        }
+      ];
+      states = {
+        monique = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
       };
     };
   };
