@@ -74,6 +74,14 @@
             "store"
           ];
         }
+        {
+          command = [
+            "systemctl"
+            "--user"
+            "start"
+            "sunshine.service"
+          ];
+        }
       ];
 
       binds = {
