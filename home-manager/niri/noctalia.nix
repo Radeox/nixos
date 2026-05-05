@@ -87,18 +87,18 @@
             {
               characterCount = 2;
               colorizeIcons = false;
-              emptyColor = "secondary";
+              emptyColor = "none";
               enableScrollWheel = true;
               focusedColor = "primary";
               followFocusedScreen = false;
               fontWeight = "bold";
               groupedBorderOpacity = 1;
-              hideUnoccupied = false;
+              hideUnoccupied = true;
               iconScale = 0.8;
               id = "Workspace";
-              labelMode = "index";
-              occupiedColor = "secondary";
-              pillSize = 0.6;
+              labelMode = "none";
+              occupiedColor = "none";
+              pillSize = 0.45;
               showApplications = false;
               showApplicationsHover = false;
               showBadge = true;
@@ -140,7 +140,7 @@
             {
               deviceNativePath = "__default__";
               displayMode = "graphic-clean";
-              hideIfIdle = false;
+              hideIfIdle = true;
               hideIfNotDetected = true;
               id = "Battery";
               showNoctaliaPerformance = false;
@@ -151,6 +151,18 @@
               displayMode = "onhover";
               iconColor = "none";
               id = "Brightness";
+              textColor = "none";
+            }
+            {
+              displayMode = "onhover";
+              iconColor = "none";
+              id = "VPN";
+              textColor = "none";
+            }
+            {
+              displayMode = "onhover";
+              iconColor = "none";
+              id = "Network";
               textColor = "none";
             }
             {
