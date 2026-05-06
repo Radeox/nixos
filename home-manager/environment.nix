@@ -7,18 +7,18 @@
 
       defaultApplications = {
         # HTML and Browser
-        "text/html" = [ "app.zen_browser.zen.desktop" ];
-        "x-scheme-handler/http" = [ "app.zen_browser.zen.desktop" ];
-        "x-scheme-handler/https" = [ "app.zen_browser.zen.desktop" ];
-        "x-scheme-handler/about" = [ "app.zen_browser.zen.desktop" ];
-        "x-scheme-handler/unknown" = [ "app.zen_browser.zen.desktop" ];
+        "text/html" = [ "zen.desktop" ];
+        "x-scheme-handler/http" = [ "zen.desktop" ];
+        "x-scheme-handler/https" = [ "zen.desktop" ];
+        "x-scheme-handler/about" = [ "zen.desktop" ];
+        "x-scheme-handler/unknown" = [ "zen.desktop" ];
 
         # File Manager (Nautilus)
         "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
         "x-scheme-handler/file" = [ "org.gnome.Nautilus.desktop" ];
 
         # PDF
-        "application/pdf" = [ "app.zen_browser.zen.desktop" ];
+        "application/pdf" = [ "zen.desktop" ];
 
         # Images
         "image/jpeg" = [ "org.gnome.Loupe.desktop" ];
@@ -64,7 +64,7 @@
   };
 
   home.sessionVariables = {
-    DEFAULT_BROWSER = "flatpak run app.zen_browser.zen";
+    DEFAULT_BROWSER = "zen-beta";
     gnome_keyring_control = "/run/user/1000/keyring";
   };
 }
