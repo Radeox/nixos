@@ -14,6 +14,7 @@
     dig
     duf
     dust
+    ente-auth
     evince
     fastfetch
     fd
@@ -54,10 +55,12 @@
     opentofu
     pciutils
     php85
+    postman
     quickemu
     rar
     remmina
     ripgrep
+    rpi-imager
     rpiboot
     scrcpy
     seahorse

@@ -59,17 +59,12 @@
       # Packages list
       packages = [
         "app.zen_browser.zen"
-        "com.getpostman.Postman"
-        "com.github.tchx84.Flatseal"
-        "io.ente.auth"
-        "org.raspberrypi.rpi-imager"
       ];
     };
   };
 
   # Flatpak shell aliases
   environment.shellAliases = {
-    obsidian = "obsidian";
     zen = "flatpak run app.zen_browser.zen";
   };
 
