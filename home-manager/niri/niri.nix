@@ -92,11 +92,7 @@
         "Mod+J".action.spawn = "Telegram";
         "Mod+N".action.spawn = "spotify";
         "Mod+Y".action.spawn = "nautilus";
-        "Mod+B".action.spawn = [
-          "flatpak"
-          "run"
-          "app.zen_browser.zen"
-        ];
+        "Mod+B".action.spawn = "zen-beta";
 
         # Close window
         "Mod+Q".action.close-window = { };

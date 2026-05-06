@@ -57,15 +57,8 @@
       };
 
       # Packages list
-      packages = [
-        "app.zen_browser.zen"
-      ];
+      packages = [ ];
     };
-  };
-
-  # Flatpak shell aliases
-  environment.shellAliases = {
-    zen = "flatpak run app.zen_browser.zen";
   };
 
   security = {

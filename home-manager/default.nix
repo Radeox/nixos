@@ -10,6 +10,7 @@
     ./shell.nix
     ./theme.nix
     ./xwayland-satellite.nix
+    ./zen.nix
   ];
 
   # Enable Home Manager
