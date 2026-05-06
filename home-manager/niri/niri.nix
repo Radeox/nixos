@@ -26,7 +26,7 @@
       };
 
       layout = {
-        gaps = 12;
+        gaps = 14;
         center-focused-column = "never";
 
         preset-column-widths = [
@@ -152,8 +152,8 @@
         "Mod+Down".action.focus-window-or-workspace-down = { };
 
         # Move windows
-        "Mod+Shift+Left".action.move-column-left = { };
-        "Mod+Shift+Right".action.move-column-right = { };
+        "Mod+Shift+Left".action.move-column-left-or-to-monitor-left = { };
+        "Mod+Shift+Right".action.move-column-right-or-to-monitor-right = { };
         "Mod+Shift+Up".action.move-window-up-or-to-workspace-up = { };
         "Mod+Shift+Down".action.move-window-down-or-to-workspace-down = { };
 
