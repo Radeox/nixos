@@ -62,9 +62,4 @@
       config.common.default = "*";
     };
   };
-
-  home.sessionVariables = {
-    DEFAULT_BROWSER = "zen-beta";
-    gnome_keyring_control = "/run/user/1000/keyring";
-  };
 }

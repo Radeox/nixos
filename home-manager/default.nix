@@ -1,7 +1,6 @@
 { ... }:
 {
   imports = [
-    ./environment.nix
     ./ghostty.nix
     ./git.nix
     ./neovim.nix
@@ -10,6 +9,7 @@
     ./shell.nix
     ./theme.nix
     ./xwayland-satellite.nix
+    ./xdg.nix
     ./zen.nix
   ];
 

@@ -13,4 +13,8 @@
     enable = true;
     profileNames = [ "radeox" ];
   };
+
+  home.sessionVariables = {
+    DEFAULT_BROWSER = "zen-beta";
+  };
 }
