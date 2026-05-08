@@ -167,7 +167,7 @@
             }
             {
               defaultSettings = {
-                activeColor = "primary";
+                activeColor = "none";
                 refreshInterval = 5000;
                 showProfileLabel = false;
               };
