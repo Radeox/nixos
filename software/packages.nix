@@ -37,6 +37,8 @@
     hyprpicker
     imagemagick
     inkscape
+    isort
+    kicad-small
     killall
     localsend
     loupe
@@ -53,15 +55,18 @@
     obsidian
     onlyoffice-desktopeditors
     opentofu
+    openvpn
     pciutils
     php85
     postman
+    python314
     quickemu
     rar
     remmina
     ripgrep
     rpi-imager
     rpiboot
+    ruff
     scrcpy
     seahorse
     showtime
@@ -76,29 +81,16 @@
     ungoogled-chromium
     unzip
     usbimager
+    uv
+    uv-sort
     valent
     veracrypt
     vlc
     wget
     whois
+    wireguard-tools
     witr
     wl-clipboard
     zip
-
-    # Python
-    isort
-    python314
-    ruff
-    uv
-    uv-sort
-
-    # VPN
-    openvpn
-    wireguard-tools
-  ];
-
-  # Add OpenVPN plugin to NetworkManager
-  networking.networkmanager.plugins = [
-    pkgs.networkmanager-openvpn
   ];
 }

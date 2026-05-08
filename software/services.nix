@@ -45,20 +45,6 @@
       user = "radeox";
       configDir = "/home/radeox/.config/syncthing";
     };
-
-    # Flatpak configuration
-    flatpak = {
-      enable = true;
-
-      # Auto-update
-      update.auto = {
-        enable = true;
-        onCalendar = "daily";
-      };
-
-      # Packages list
-      packages = [ ];
-    };
   };
 
   security = {

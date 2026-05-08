@@ -2,6 +2,7 @@
 {
   imports = [
     ./extra.nix
+    ./flatpak.nix
     ./gaming.nix
     ./monique.nix
     ./niri.nix
