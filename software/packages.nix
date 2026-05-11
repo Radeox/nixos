@@ -93,4 +93,9 @@
     wl-clipboard
     zip
   ];
+
+  # Add OpenVPN plugin to NetworkManager
+  networking.networkmanager.plugins = [
+    pkgs.networkmanager-openvpn
+  ];
 }
