@@ -91,6 +91,7 @@
     wireguard-tools
     witr
     wl-clipboard
+    yazi
     zip
   ];
 
