@@ -203,6 +203,12 @@
               showUnreadBadge = true;
               unreadBadgeColor = "primary";
             }
+            {
+              displayMode = "onhover";
+              iconColor = "none";
+              id = "Launcher";
+              textColor = "none";
+            }
           ];
         };
       };
