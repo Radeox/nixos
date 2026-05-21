@@ -60,7 +60,6 @@
     php85
     postman
     python314
-    quickemu
     rar
     remmina
     ripgrep
