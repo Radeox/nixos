@@ -1,10 +1,20 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   # Enable Niri
-  programs.niri = {
+  programs.niri.enable = true;
+
+  # ReGreet for login
+  programs.regreet = {
     enable = true;
-    package = pkgs.niri;
+
+    theme = {
+      package = pkgs.gnome-themes-extra;
+      name = "Adwaita-dark";
+    };
   };
+
+  # Disable stylix for ReGreet
+  stylix.targets.regreet.enable = false;
 
   # Enable dconf for GTK settings
   programs.dconf.enable = true;
@@ -13,14 +23,18 @@
   xdg.portal = {
     enable = true;
     extraPortals = [
-      pkgs.xdg-desktop-portal-gnome
+      pkgs.xdg-desktop-portal-wlr
+      pkgs.xdg-desktop-portal-gtk
     ];
-    config.common.default = [ "gnome" "gtk" ];
-  };
 
-  # Enable GDM (for login)
-  services.displayManager = {
-    gdm.enable = true;
-    gdm.wayland = true;
+    config = {
+      common = {
+        default = [ "gtk" ];
+      };
+
+      niri = {
+        default = lib.mkForce [ "wlr" "gtk" ];
+      };
+    };
   };
 }
