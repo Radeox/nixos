@@ -6,10 +6,6 @@
     quickemu
   ];
 
-  # Virt-manager config
-  programs.virt-manager.enable = true;
-  users.groups.libvirtd.members = [ "radeox" ];
-
   virtualisation = {
     # Docker config
     docker.enable = true;
@@ -18,6 +14,5 @@
 
     # Spice USB redirection
     spiceUSBRedirection.enable = true;
-    libvirtd.enable = true;
   };
 }
