@@ -4,7 +4,7 @@
   environment.shellAliases = {
     # NixOS commands
     nix-update = "sudo nix flake update --flake /etc/nixos && sudo nixos-rebuild switch --accept-flake-config --flake /etc/nixos && flatpak update -y";
-    nix-rebuild-single-job = "sudo nixos-rebuild switch --upgrade --accept-flake-config --flake /etc/nixos --max-jobs 1";
+    nix-rebuild-single-job = "sudo nixos-rebuild switch --accept-flake-config --flake /etc/nixos --max-jobs 1";
     nix-config = "cd /etc/nixos && vim";
     nix-clean = "sudo nix-collect-garbage -d && sudo nixos-rebuild boot";
 
