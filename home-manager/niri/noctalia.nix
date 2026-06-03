@@ -366,7 +366,7 @@
         forced = false;
         manualSunrise = "06:30";
         manualSunset = "18:30";
-        nightTemp = "4000";
+        nightTemp = "5200";
       };
       notifications = {
         backgroundOpacity = 1;
