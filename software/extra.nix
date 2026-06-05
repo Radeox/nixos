@@ -23,4 +23,12 @@
       terminal = "ghostty";
     };
   };
+
+  # Disable coredump file (Antigravity bug)
+  systemd.coredump.settings = {
+    Coredump = {
+      Storage = "none";
+      ProcessSizeMax = "0";
+    };
+  };
 }
