@@ -3,7 +3,6 @@
   environment.systemPackages = with pkgs; [
     android-tools
     ansible
-    antigravity-fhs
     awscli2
     bleachbit
     brightnessctl
@@ -23,7 +22,6 @@
     file-roller
     fzf
     gcc
-    gemini-cli
     gimp
     git
     git-extras

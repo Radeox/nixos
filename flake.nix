@@ -47,6 +47,12 @@
       };
     };
 
+    # Antigravity
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Monique
     monique = {
       url = "github:ToRvaLDz/monique";
@@ -64,6 +70,7 @@
       stylix,
       noctalia,
       niri,
+      antigravity-nix,
       monique,
       ...
     }:

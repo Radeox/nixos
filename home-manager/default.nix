@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./antigravity.nix
     ./ghostty.nix
     ./git.nix
     ./neovim.nix

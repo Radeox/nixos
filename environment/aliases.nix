@@ -19,7 +19,8 @@
     rgrep = "rg";
     sl = "ls";
     sudo = "sudo ";
-    a = "antigravity . && exit";
+    a = "antigravity-ide . && exit";
+    kill-ag = "pkill -9 -f antigravity-ide && pkill -9 -f antigravity";
 
     # Replacement Aliases
     cat = "bat -p";
