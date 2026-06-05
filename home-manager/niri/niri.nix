@@ -22,7 +22,10 @@
         };
 
         mouse.accel-speed = 0.0;
-        focus-follows-mouse.enable = true;
+        focus-follows-mouse = {
+          enable = true;
+          max-scroll-amount = "0%";
+        };
       };
 
       layout = {
