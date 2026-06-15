@@ -33,4 +33,7 @@
   # Prevent systemd from waiting for network online
   systemd.network.wait-online.enable = false;
   boot.initrd.systemd.network.wait-online.enable = false;
+
+  # Fix DNS crash after resume
+  services.resolved.enable = true;
 }
