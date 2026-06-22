@@ -12,6 +12,7 @@
         "kvm"
         "lp"
         "networkmanager"
+        "render"
         "scanner"
         "video"
         "wheel"
