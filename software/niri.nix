@@ -32,8 +32,15 @@
         default = [ "gtk" ];
       };
 
+      gamescope = {
+        default = [ "gtk" ];
+      };
+
       niri = {
-        default = lib.mkForce [ "wlr" "gtk" ];
+        default = lib.mkForce [
+          "wlr"
+          "gtk"
+        ];
       };
     };
   };
