@@ -37,7 +37,7 @@
         [Desktop Entry]
         Name=Steam
         Comment=Steam Big Picture
-        Exec=${pkgs.gamescope}/bin/gamescope -f -e -F fsr -- ${pkgs.steam}/bin/steam -gamepadui -steamos3
+        Exec=env MESA_VK_WSI_PRESENT_MODE=mailbox gamemoderun ${pkgs.gamescope}/bin/gamescope -f -e -F fsr --backend drm -- ${pkgs.steam}/bin/steam -gamepadui -steamos3
         Type=Application
         EOF
       '';
