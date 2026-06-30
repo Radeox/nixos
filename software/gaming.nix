@@ -43,4 +43,20 @@
       '';
     })
   ];
+
+  nixpkgs.overlays = [
+    (final: prev: {
+      cantarell-fonts = prev.cantarell-fonts.overrideAttrs (oldAttrs: {
+        # The failure is inside the custom font generation python script.
+        # This bypasses the build step entirely if you just need the placeholder package
+        # to clear the Steam/X11 dependency chain.
+        dontBuild = true;
+        installPhase = ''
+          mkdir -p $out/share/fonts/opentype
+          cp prebuilt/*.otf $out/share/fonts/opentype/ 2>/dev/null || true
+          touch $out/share/fonts/opentype/placeholder-so-it-builds.otf
+        '';
+      });
+    })
+  ];
 }
