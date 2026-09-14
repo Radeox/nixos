@@ -8,7 +8,6 @@
     bleachbit
     brightnessctl
     cargo
-    cliphist
     cmake
     deluge
     dig
@@ -43,7 +42,6 @@
     mongodb-tools
     nautilus
     nautilus-python
-    networkmanagerapplet
     nil
     nmap
     nodejs_24
@@ -78,9 +76,7 @@
     veracrypt
     vlc
     wget
-    whois
     wireguard-tools
-    wl-clipboard
     yazi
     zip
     inputs.pixel-access.packages.${pkgs.stdenv.hostPlatform.system}.default
