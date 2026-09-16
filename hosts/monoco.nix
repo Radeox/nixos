@@ -92,4 +92,25 @@
 
   # RTC time standard to localtime (dual boot)
   time.hardwareClockInLocalTime = true;
+
+  # Dual boot: order Windows at the top in systemd-boot and set as default
+  boot.lanzaboote.settings = {
+    default = "windows.conf";
+    auto-entries = false;
+  };
+
+  # Create Windows loader entry with priority sort-key so it appears at the top
+  system.activationScripts.windowsBootEntry = {
+    supportsDryActivation = false;
+    text = ''
+      mkdir -p /boot/loader/entries
+      cat << 'EOF' > /boot/loader/entries/windows.conf
+        title Windows Boot Manager
+        efi /EFI/Microsoft/Boot/bootmgfw.efi
+        sort-key 00-windows
+        EOF
+      # Clean up stale Type #1 entries from previous non-Lanzaboote generations
+      rm -f /boot/loader/entries/nixos-generation-*.conf
+    '';
+  };
 }
