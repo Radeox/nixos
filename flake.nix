@@ -60,21 +60,29 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Openlogi
+    openlogi = {
+      url = "github:AprilNEA/OpenLogi";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Pixel Access - Custom app
     pixel-access.url = "path:/home/radeox/Sources/Pixel/pixel-access-nix";
   };
 
   outputs =
     inputs@{ nixpkgs
+    , antigravity-nix
     , home-manager
     , lanzaboote
+    , monique
+    , niri
     , nix-flatpak
     , nixos-hardware
-    , stylix
     , noctalia
-    , niri
-    , antigravity-nix
-    , monique
+    , openlogi
+    , stylix
+    , zen-browser
     , ...
     }:
     {
@@ -97,6 +105,12 @@
             # Stylix - Theme manager
             stylix.nixosModules.stylix
 
+            # Openlogi
+            openlogi.nixosModules.default
+
+            # Monique
+            monique.nixosModules.default
+
             # Home Manager - Manage dotfiles
             home-manager.nixosModules.home-manager
             {
@@ -106,9 +120,10 @@
               home-manager.extraSpecialArgs = { inherit inputs; };
               home-manager.users.radeox = {
                 imports = [
-                  stylix.homeModules.stylix
+                  niri.homeModules.niri
                   noctalia.homeModules.default
-                  inputs.niri.homeModules.niri
+                  stylix.homeModules.stylix
+                  zen-browser.homeModules.beta
                   ./home-manager
                 ];
               };
@@ -140,6 +155,12 @@
             # Stylix - Theme manager
             stylix.nixosModules.stylix
 
+            # Openlogi
+            openlogi.nixosModules.default
+
+            # Monique
+            monique.nixosModules.default
+
             # Setup Home Manager
             home-manager.nixosModules.home-manager
             {
@@ -149,9 +170,10 @@
               home-manager.extraSpecialArgs = { inherit inputs; };
               home-manager.users.radeox = {
                 imports = [
-                  stylix.homeModules.stylix
+                  niri.homeModules.niri
                   noctalia.homeModules.default
-                  inputs.niri.homeModules.niri
+                  stylix.homeModules.stylix
+                  zen-browser.homeModules.beta
                   ./home-manager
                 ];
               };

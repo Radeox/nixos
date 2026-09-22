@@ -5,7 +5,6 @@
     ./flatpak.nix
     ./gaming.nix
     ./login.nix
-    ./monique.nix
     ./niri.nix
     ./packages.nix
     ./services.nix

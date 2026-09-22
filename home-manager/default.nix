@@ -1,17 +1,16 @@
 { ... }:
 {
   imports = [
-    ./antigravity.nix
     ./ghostty.nix
     ./git.nix
     ./neovim.nix
-    ./niri
+    ./niri.nix
+    ./noctalia.nix
     ./programs.nix
     ./shell.nix
     ./theme.nix
-    ./xwayland-satellite.nix
     ./xdg.nix
-    ./zen.nix
+    ./xwayland.nix
   ];
 
   # Enable Home Manager

@@ -8,14 +8,20 @@
     # Help programs expecting FHS environment
     nix-ld.enable = true;
 
+    # Openlogi
+    openlogi.enable = true;
+
     # KDE Connect
     kdeconnect = {
       enable = true;
       package = pkgs.valent;
     };
 
-    # Other stuff
-    dconf.enable = true;
+    # Monique (MONitor Integrated QUick Editor)
+    monique = {
+      enable = true;
+      enablePolkit = true;
+    };
 
     # Nautilus extension to open terminal
     nautilus-open-any-terminal = {

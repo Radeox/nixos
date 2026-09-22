@@ -1,12 +1,12 @@
 { pkgs, ... }:
 {
-  # Enable polkit (required for Noctalia GUI to sync appearance via pkexec)
-  security.polkit.enable = true;
-
-  # Install noctalia-greeter system-wide so Polkit actions & helper binaries are registered
+  # Install noctalia-greeter
   environment.systemPackages = [
     pkgs.noctalia-greeter
   ];
+
+  # Enable polkit
+  security.polkit.enable = true;
 
   # Native noctalia-greeter session managed directly by greetd
   services.greetd = {

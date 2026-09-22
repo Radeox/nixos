@@ -18,6 +18,7 @@
         "wheel"
       ];
     };
+
     defaultUserShell = pkgs.fish;
   };
 }

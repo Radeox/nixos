@@ -54,20 +54,20 @@
     fsType = "ext4";
   };
 
-  fileSystems."/home/radeox/Vault" = {
-    device = "/dev/disk/by-uuid/6EF497832FF9AE12";
-    fsType = "ntfs3";
-    options = [
-      "uid=1000"
-      "gid=100"
-      "rw"
-      "user"
-      "exec"
-      "umask=000"
-      "nofail"
-      "iocharset=utf8"
-    ];
-  };
+  # fileSystems."/home/radeox/Vault" = {
+  #   device = "/dev/disk/by-uuid/6EF497832FF9AE12";
+  #   fsType = "ntfs3";
+  #   options = [
+  #     "uid=1000"
+  #     "gid=100"
+  #     "rw"
+  #     "user"
+  #     "exec"
+  #     "umask=000"
+  #     "nofail"
+  #     "iocharset=utf8"
+  #   ];
+  # };
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
