@@ -77,6 +77,7 @@
     vlc
     wget
     wireguard-tools
+    wl-clipboard
     yazi
     zip
     inputs.pixel-access.packages.${pkgs.stdenv.hostPlatform.system}.default
