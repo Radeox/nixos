@@ -52,6 +52,7 @@
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/5acd4081-0cd8-486f-b5f7-70e83e27de57";
     fsType = "btrfs";
+    options = [ "noatime" ];
   };
 
   fileSystems."/home/radeox/Vault" = {
