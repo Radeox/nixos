@@ -3,6 +3,9 @@
   # Enable Niri
   programs.niri.enable = true;
 
+  # Enable Niri GNOME keyring
+  security.pam.services.niri.enableGnomeKeyring = true;
+
   # XDG Desktop Portals
   xdg.portal = {
     enable = true;

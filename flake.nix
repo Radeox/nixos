@@ -68,6 +68,12 @@
 
     # Pixel Access - Custom app
     pixel-access.url = "path:/home/radeox/Sources/Pixel/pixel-access-nix";
+
+    # Tuios
+    tuios = {
+      url = "github:Gaurav-Gosain/tuios/v0.8.1";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

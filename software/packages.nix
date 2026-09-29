@@ -80,6 +80,7 @@
     wl-clipboard
     yazi
     zip
+    inputs.tuios.packages.${pkgs.stdenv.hostPlatform.system}.tuios
     inputs.pixel-access.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

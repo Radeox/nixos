@@ -47,13 +47,8 @@
     };
   };
 
-  security = {
-    # Enable polkit
-    polkit.enable = true;
-
-    # Enable Niri GNOME keyring
-    pam.services.niri.enableGnomeKeyring = true;
-  };
+  # Enable polkit
+  security.polkit.enable = true;
 
   # Helps with file secrets/previews
   programs.gnome-terminal.enable = true;
