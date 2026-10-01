@@ -9,6 +9,7 @@
     ./programs.nix
     ./shell.nix
     ./theme.nix
+    ./tuios.nix
     ./xdg.nix
     ./xwayland.nix
   ];
