@@ -127,7 +127,6 @@
               home-manager.users.radeox = {
                 imports = [
                   niri.homeModules.niri
-                  noctalia.homeModules.default
                   stylix.homeModules.stylix
                   zen-browser.homeModules.beta
                   ./home-manager
@@ -177,7 +176,6 @@
               home-manager.users.radeox = {
                 imports = [
                   niri.homeModules.niri
-                  noctalia.homeModules.default
                   stylix.homeModules.stylix
                   zen-browser.homeModules.beta
                   ./home-manager
