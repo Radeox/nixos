@@ -28,14 +28,13 @@
 
     # Niri Flake
     niri = {
-      # url = "github:sodiboo/niri-flake";
       url = "github:epireyn/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Noctalia Shell
     noctalia = {
-      url = "github:noctalia-dev/noctalia";
+      url = "github:noctalia-dev/noctalia/v5.2.1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -62,18 +61,18 @@
 
     # Openlogi
     openlogi = {
-      url = "github:AprilNEA/OpenLogi";
+      url = "github:AprilNEA/OpenLogi/v0.8.10";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # Tuios
+    tuios = {
+      url = "github:Gaurav-Gosain/tuios/v0.8.5";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Pixel Access - Custom app
     pixel-access.url = "path:/home/radeox/Sources/Pixel/pixel-access-nix";
-
-    # Tuios
-    tuios = {
-      url = "github:Gaurav-Gosain/tuios/v0.8.4";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =

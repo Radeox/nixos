@@ -19,7 +19,7 @@ let
       motion = "full";
       modal_dim = 30;
       whichkey_position = "";
-      window_title_position = "top";
+      window_title_position = "hidden";
       hide_clock = false;
       show_clock = false;
       show_cpu = false;
