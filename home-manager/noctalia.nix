@@ -97,7 +97,7 @@
         temperature_night = 4800;
       };
 
-      caledar = {
+      calendar = {
         enabled = true;
       };
 
