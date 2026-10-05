@@ -61,7 +61,7 @@
 
     # Openlogi
     openlogi = {
-      url = "github:AprilNEA/OpenLogi/v0.8.10";
+      url = "github:AprilNEA/OpenLogi/v0.8.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
