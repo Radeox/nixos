@@ -12,8 +12,8 @@
       # Fix for legacy SSH terminal issues
       shell-integration-features = "ssh-env";
 
-      # Reduce mouse scroll speed (default is too fast, ~50 lines)
-      mouse-scroll-multiplier = 0.1;
+      # Reduce mouse scroll speed
+      mouse-scroll-multiplier = 0.5;
 
       # Disable clipboard paste protection
       clipboard-paste-protection = false;
