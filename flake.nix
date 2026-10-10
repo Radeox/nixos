@@ -59,15 +59,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Openlogi
-    openlogi = {
-      url = "github:AprilNEA/OpenLogi/v0.8.11";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Tuios
     tuios = {
-      url = "github:Gaurav-Gosain/tuios/v0.9.0";
+      url = "github:Gaurav-Gosain/tuios/v0.9.2";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -85,7 +79,6 @@
     , nix-flatpak
     , nixos-hardware
     , noctalia
-    , openlogi
     , stylix
     , zen-browser
     , ...
@@ -109,9 +102,6 @@
 
             # Stylix - Theme manager
             stylix.nixosModules.stylix
-
-            # Openlogi
-            openlogi.nixosModules.default
 
             # Monique
             monique.nixosModules.default
@@ -158,9 +148,6 @@
 
             # Stylix - Theme manager
             stylix.nixosModules.stylix
-
-            # Openlogi
-            openlogi.nixosModules.default
 
             # Monique
             monique.nixosModules.default
