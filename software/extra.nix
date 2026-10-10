@@ -8,9 +8,6 @@
     # Help programs expecting FHS environment
     nix-ld.enable = true;
 
-    # Openlogi
-    openlogi.enable = true;
-
     # KDE Connect
     kdeconnect = {
       enable = true;
