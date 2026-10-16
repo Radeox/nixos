@@ -34,7 +34,7 @@
 
     # Noctalia Shell
     noctalia = {
-      url = "github:noctalia-dev/noctalia/v5.2.1";
+      url = "github:noctalia-dev/noctalia/v5.3.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -61,7 +61,7 @@
 
     # Tuios
     tuios = {
-      url = "github:Gaurav-Gosain/tuios/v0.9.2";
+      url = "github:Gaurav-Gosain/tuios/v0.10.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
