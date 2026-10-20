@@ -19,7 +19,7 @@
       };
 
       port = 51821;
-      ui.enable = false;
+      ui.enable = true;
       openFirewall = true;
       openInternalFirewall = true;
     };
@@ -38,6 +38,9 @@
       PermitRootLogin = "no";
     };
   };
+
+  # Use netbird client-side DNS resolution
+  services.resolved.enable = true;
 
   # Allow SSH exclusively on the NetBird private mesh interface
   networking.firewall.interfaces."nb-wt0".allowedTCPPorts = [ 22 ];
