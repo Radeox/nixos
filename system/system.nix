@@ -2,7 +2,20 @@
 {
   boot = {
     # Use latest zen kernel
-    kernelPackages = pkgs.linuxPackages_zen;
+    # KO: kernelPackages = pkgs.linuxPackages_zen
+    kernelPackages = pkgs.linuxPackages_zen.extend (kself: ksuper: {
+      # Workaround for nixpkgs issue #575192: aggregateModules fails when external modules lack .ko.cer
+      xpad-noone = ksuper.xpad-noone.overrideAttrs (old: {
+        postInstall = (old.postInstall or "") + ''
+          find "$out" -name "*.ko" -exec ${pkgs.kmodigest}/bin/kmodigest {} \;
+        '';
+      });
+      lenovo-legion-module = ksuper.lenovo-legion-module.overrideAttrs (old: {
+        postInstall = (old.postInstall or "") + ''
+          find "$out" -name "*.ko" -exec ${pkgs.kmodigest}/bin/kmodigest {} \;
+        '';
+      });
+    });
 
     # NTFS support
     supportedFilesystems = [ "ntfs" ];
