@@ -33,7 +33,6 @@
     htop
     hyprpicker
     imagemagick
-    inkscape
     isort
     killall
     localsend
@@ -47,7 +46,6 @@
     nodejs_24
     nwg-look
     obsidian
-    onlyoffice-desktopeditors
     opentofu
     openvpn
     pciutils
