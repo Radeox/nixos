@@ -76,8 +76,8 @@
 
           lock-and-suspend = {
             action = "lock_and_suspend";
-            enabled = true;
-            timeout = 900.0;
+            enabled = false;
+            timeout = 0;
           };
 
           screen-off = {

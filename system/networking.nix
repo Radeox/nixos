@@ -17,9 +17,11 @@
 
       # Dev ports = 8080 8082 9080
       # LocalSend = 53317
+      # Syncthing = 8384
       allowedTCPPorts = [
         8080
         8082
+        8384
         9080
         53317
       ];

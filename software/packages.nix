@@ -50,6 +50,7 @@
     openvpn
     pciutils
     php85
+    popsicle
     postman
     python314
     rar
