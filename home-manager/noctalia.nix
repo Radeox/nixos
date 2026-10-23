@@ -64,7 +64,6 @@
         behavior_order = [
           "lock"
           "screen-off"
-          "lock-and-suspend"
         ];
 
         behavior = {
@@ -72,12 +71,6 @@
             action = "lock";
             enabled = true;
             timeout = 600.0;
-          };
-
-          lock-and-suspend = {
-            action = "lock_and_suspend";
-            enabled = false;
-            timeout = 0;
           };
 
           screen-off = {
