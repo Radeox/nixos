@@ -637,7 +637,7 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1792758744,
+        "lastModified": 1792760802,
         "narHash": "sha256-1BIm2U5XaUbQmIjadzLLm0IMSkoQ12lP51T6rwakqtU=",
         "path": "/home/radeox/Sources/Pixel/pixel-access-nix",
         "type": "path"
@@ -885,16 +885,16 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1792258594,
-        "narHash": "sha256-1p9LCTwVuXQBFjWFpt9uvDorj/UvKh809RZy48prglU=",
+        "lastModified": 1792926175,
+        "narHash": "sha256-Ss8jYuaCkivmAzbwnlPciOtR9ftsy7wAg/mNxm/WsK0=",
         "owner": "Gaurav-Gosain",
         "repo": "tuios",
-        "rev": "f8b7820aa685b28295af46e1f32fb20b0d8461dc",
+        "rev": "3638a6f2093edfa7396b6233515786de4dbda683",
         "type": "github"
       },
       "original": {
         "owner": "Gaurav-Gosain",
-        "ref": "v0.10.1",
+        "ref": "v0.11.0",
         "repo": "tuios",
         "type": "github"
       }
