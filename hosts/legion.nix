@@ -18,10 +18,7 @@
 
     initrd = {
       # TPM2
-      systemd = {
-        enable = true;
-        tpm2.enable = true;
-      };
+      systemd.tpm2.enable = true;
 
       # Kernel modules
       availableKernelModules = [
