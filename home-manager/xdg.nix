@@ -27,12 +27,12 @@
         "image/webp" = [ "org.gnome.Loupe.desktop" ];
 
         # Video
-        "video/mp4" = [ "org.gnome.Showtime.desktop" ];
-        "video/mpeg" = [ "org.gnome.Showtime.desktop" ];
-        "video/x-matroska" = [ "org.gnome.Showtime.desktop" ];
-        "video/webm" = [ "org.gnome.Showtime.desktop" ];
-        "video/quicktime" = [ "org.gnome.Showtime.desktop" ];
-        "video/x-msvideo" = [ "org.gnome.Showtime.desktop" ];
+        "video/mp4" = [ "vlc.desktop" ];
+        "video/mpeg" = [ "vlc.desktop" ];
+        "video/x-matroska" = [ "vlc.desktop" ];
+        "video/webm" = [ "vlc.desktop" ];
+        "video/quicktime" = [ "vlc.desktop" ];
+        "video/x-msvideo" = [ "vlc.desktop" ];
 
         # Archives
         "application/zip" = [ "org.gnome.FileRoller.desktop" ];
@@ -51,7 +51,7 @@
       associations.added = {
         "x-scheme-handler/calculator" = [ "org.gnome.Calculator.desktop" ];
         "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
-        "video/mp4" = [ "org.gnome.Showtime.desktop" ];
+        "video/mp4" = [ "vlc.desktop" ];
       };
     };
 

@@ -637,7 +637,7 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1792760802,
+        "lastModified": 1792758744,
         "narHash": "sha256-1BIm2U5XaUbQmIjadzLLm0IMSkoQ12lP51T6rwakqtU=",
         "path": "/home/radeox/Sources/Pixel/pixel-access-nix",
         "type": "path"
