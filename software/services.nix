@@ -28,6 +28,9 @@
     # Enable firmware updates
     fwupd.enable = true;
 
+    # Enable GNOME keyring
+    gnome.gnome-keyring.enable = true;
+
     # Enable network discovery
     avahi = {
       enable = true;
@@ -35,15 +38,13 @@
       openFirewall = true;
     };
 
-    # Enable GNOME keyring
-    gnome.gnome-keyring.enable = true;
-
     # Syncthing configuration
     syncthing = {
       enable = true;
       openDefaultPorts = true;
       user = "radeox";
       configDir = "/home/radeox/.config/syncthing";
+      guiAddress = "0.0.0.0:8384";
     };
   };
 
