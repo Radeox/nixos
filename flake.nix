@@ -65,6 +65,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Chaotic-Nyx
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+
     # Pixel Access - Custom app
     pixel-access.url = "path:/home/radeox/Sources/Pixel/pixel-access-nix";
   };
@@ -72,6 +75,7 @@
   outputs =
     inputs@{ nixpkgs
     , antigravity-nix
+    , chaotic
     , home-manager
     , lanzaboote
     , monique
@@ -105,6 +109,9 @@
 
             # Monique
             monique.nixosModules.default
+
+            # Chaotic Nyx
+            chaotic.nixosModules.default
 
             # Home Manager - Manage dotfiles
             home-manager.nixosModules.home-manager
@@ -151,6 +158,9 @@
 
             # Monique
             monique.nixosModules.default
+
+            # Chaotic Nyx
+            chaotic.nixosModules.default
 
             # Setup Home Manager
             home-manager.nixosModules.home-manager

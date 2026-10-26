@@ -1,4 +1,5 @@
-{ config
+{ pkgs
+, config
 , lib
 , modulesPath
 , ...
@@ -10,6 +11,9 @@
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   boot = {
+    # Use latest cachy kernel
+    kernelPackages = pkgs.linuxPackages_cachyos;
+
     # Kernel modules
     kernelModules = [
       "amdgpu"
@@ -31,6 +35,9 @@
         "sd_mod"
       ];
       kernelModules = [ "dm-snapshot" ];
+
+      # NTFS support
+      supportedFilesystems = [ "ntfs" ];
 
       # LUKS Partition
       luks.devices.cryptroot.device = "/dev/disk/by-uuid/b48ae553-49b4-4747-aa00-16b5b15d264d";

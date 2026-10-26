@@ -1,4 +1,5 @@
-{ config
+{ pkgs
+, config
 , lib
 , modulesPath
 , ...
@@ -10,11 +11,25 @@
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   boot = {
+    # Use latest stock kernel
+    # KO: kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_latest.extend (kself: ksuper: {
+      # Workaround for nixpkgs issue #575192: aggregateModules fails when external modules lack .ko.cer
+      lenovo-legion-module = ksuper.lenovo-legion-module.overrideAttrs (old: {
+        postInstall = (old.postInstall or "") + ''
+          find "$out" -name "*.ko" -exec ${pkgs.kmodigest}/bin/kmodigest {} \;
+        '';
+      });
+    });
+
     # Kernel modules
     kernelModules = [ "nvidia" "msr" ];
 
     # Add legion module
     extraModulePackages = [ config.boot.kernelPackages.lenovo-legion-module ];
+
+    # NTFS support
+    supportedFilesystems = [ "ntfs" ];
 
     initrd = {
       # TPM2
