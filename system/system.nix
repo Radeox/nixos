@@ -20,6 +20,9 @@
       # Keep HTTP connections open to reuse them for subsequent file requests
       http-connections = 16;
 
+      # Permit other users to add substituters
+      trusted-users = [ "root" "@wheel" ];
+
       # Configure binary cache mirrors
       substituters = [
         "https://cache.nixos.org"
