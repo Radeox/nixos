@@ -19,7 +19,7 @@
       };
 
       port = 51821;
-      ui.enable = true;
+      ui.enable = false;
       openFirewall = true;
       openInternalFirewall = true;
     };
