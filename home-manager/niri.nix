@@ -233,6 +233,9 @@
         "Mod+BracketRight".action.set-column-width = "+10%";
       };
 
+      # App decorations
+      prefer-no-csd = true;
+
       window-rules = [
         {
           geometry-corner-radius = {
@@ -251,6 +254,13 @@
         {
           matches = [{ app-id = "org.gnome.Calculator"; }];
           open-floating = true;
+        }
+        {
+          matches = [{ app-id = "com.mitchellh.ghostty"; }];
+          draw-border-with-background = false;
+          background-effect = {
+            blur = true;
+          };
         }
       ];
 
