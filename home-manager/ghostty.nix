@@ -10,7 +10,7 @@
       resize-overlay = "never";
 
       # Background styling: frosted glass and dark
-      background-opacity = lib.mkForce 0.88;
+      background-opacity = lib.mkForce 0.9;
       background-blur = true;
 
       # Fix for legacy SSH terminal issues
