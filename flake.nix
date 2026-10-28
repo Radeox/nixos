@@ -5,14 +5,17 @@
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # Manage dotfiles
-    home-manager.url = "github:nix-community/home-manager/master";
-
     # NixOS hardware configurations
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     # Flatpak manager
     nix-flatpak.url = "github:gmodena/nix-flatpak/latest";
+
+    # Manage dotfiles
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Secure boot
     lanzaboote = {
