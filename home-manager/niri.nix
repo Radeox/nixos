@@ -5,7 +5,7 @@
 
     settings = {
       includes = [
-        { path = "monitors.kdl"; optional = true; }
+        { path = "monitors.kdl"; required = false; }
       ];
 
       input = {
@@ -266,7 +266,12 @@
 
       # Disable hot corners
       gestures = {
-        hot-corners.enable = false;
+        hot-corners = {
+          top-left = false;
+          top-right = false;
+          bottom-left = false;
+          bottom-right = false;
+        };
       };
 
       # Extra
