@@ -35,12 +35,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Noctalia Shell
-    noctalia = {
-      url = "github:noctalia-dev/noctalia/v5.4.0";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Zen Browser
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
@@ -62,16 +56,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Tuios
-    tuios = {
-      url = "github:Gaurav-Gosain/tuios/v0.11.1";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Chaotic-Nyx
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
-    # Pixel Access - Custom app
+    # Pixel Access
     pixel-access.url = "path:/home/radeox/Sources/Pixel/pixel-access-nix";
   };
 
@@ -85,7 +73,6 @@
     , niri
     , nix-flatpak
     , nixos-hardware
-    , noctalia
     , stylix
     , zen-browser
     , ...
