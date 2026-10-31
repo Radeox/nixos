@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
   # Enable and configure some additional programs
   programs = {
@@ -7,12 +7,6 @@
 
     # Help programs expecting FHS environment
     nix-ld.enable = true;
-
-    # KDE Connect
-    kdeconnect = {
-      enable = true;
-      package = pkgs.valent;
-    };
 
     # Monique (MONitor Integrated QUick Editor)
     monique = {

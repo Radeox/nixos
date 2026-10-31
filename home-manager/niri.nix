@@ -194,22 +194,18 @@
         # Media
         "XF86AudioPlay".action.spawn = [
           "playerctl"
-          "--ignore-player=Valent"
           "play-pause"
         ];
         "XF86AudioNext".action.spawn = [
           "playerctl"
-          "--ignore-player=Valent"
           "next"
         ];
         "XF86AudioPrev".action.spawn = [
           "playerctl"
-          "--ignore-player=Valent"
           "previous"
         ];
         "XF86AudioStop".action.spawn = [
           "playerctl"
-          "--ignore-player=Valent"
           "stop"
         ];
 

@@ -39,13 +39,15 @@ The configuration targets two x86_64 hosts configured in [`flake.nix`](file:///e
 │   ├── gaming.nix        # Steam session wrapper, sxhkd audio bindings, Gamemode
 │   ├── virt.nix          # Docker, OCI containers, QuickEMU, SPICE USB redirection
 │   ├── packages.nix      # Core system-wide packages and utilities
-│   └── flatpak.nix       # Declarative Flatpak package management via nix-flatpak
+│   ├── flatpak.nix       # Declarative Flatpak package management via nix-flatpak
+│   ├── extra.nix         # Miscellaneous programs (Fish, nix-ld, Monique, Nautilus terminal)
+│   └── netbird.nix       # NetBird mesh VPN client and restricted OpenSSH service
 ├── environment/          # System shell environment & helpers
 │   ├── default.nix       # Environment variables (Wayland/Ozone, XCursor)
 │   ├── user.nix          # User account definition (`radeox`)
 │   ├── aliases.nix       # System-wide shell aliases (nix-rebuild, lazydocker, etc.)
 │   ├── scripts.nix       # Custom utility scripts (activate-venv, docker-clean, myip, VPN toggles)
-│   └── extra.nix         # Miscellaneous integrations (nix-ld, OpenLogi, Monique, Valent/KDE Connect)
+│   └── extra.nix         # Timezone (Europe/Rome) and Italian locale settings
 └── home-manager/         # User dotfiles and environment management (user: radeox)
     ├── default.nix       # Home Manager aggregator and user state
     ├── niri.nix          # Niri compositor keybindings, layout, window rules, monitors
