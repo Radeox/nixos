@@ -3,7 +3,6 @@
   environment.systemPackages = with pkgs; [
     android-tools
     ansible
-    apostrophe
     awscli2
     bitwarden-cli
     bleachbit
