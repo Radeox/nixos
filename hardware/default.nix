@@ -31,8 +31,9 @@
       extraBackends = [ pkgs.sane-airscan ];
     };
 
-    # Enable the Xbox One controller driver
+    # Enable the Xbox One controller driver (dongle/bluetooth)
     xone.enable = true;
+    xpadneo.enable = true;
   };
 
   services = {
