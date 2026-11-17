@@ -4,7 +4,6 @@
     android-tools
     ansible
     awscli2
-    bitwarden-cli
     bleachbit
     brightnessctl
     cargo

@@ -67,11 +67,11 @@
     # Pay Respects configuration
     pay-respects = {
       enable = true;
+      enableFishIntegration = true;
       options = [
         "--alias"
         "f"
       ];
-      enableFishIntegration = true;
     };
   };
 }
