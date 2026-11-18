@@ -79,7 +79,6 @@
     wl-clipboard
     yazi
     zip
-    inputs.ai-usagebar.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.pixel-access.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

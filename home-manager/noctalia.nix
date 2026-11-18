@@ -12,7 +12,6 @@
           concave_edge_corners = false;
           end = [
             "tray"
-            "bar"
             "battery"
             "volume"
             "network"
@@ -102,13 +101,7 @@
       };
 
       plugins = {
-        enabled = [ "felipeartur/ai-usagebar" ];
-      };
-
-      plugin_settings = {
-        "felipeartur/ai-usagebar" = {
-          usage_display = "remaining";
-        };
+        enabled = [ ];
       };
 
       osd = {
@@ -175,14 +168,6 @@
       };
 
       widget = {
-        bar = {
-          capsule_border_width = 0.5;
-          capsule_padding = 7;
-          show_value = false;
-          type = "felipeartur/ai-usagebar:bar";
-          visualization = "none";
-        };
-
         battery = {
           hide_when_full = true;
           hide_when_plugged = true;

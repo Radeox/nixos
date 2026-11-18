@@ -61,24 +61,22 @@
 
     # Pixel Access
     pixel-access.url = "path:/home/radeox/Sources/Pixel/pixel-access-nix";
-
-    # AI Usagebar
-    ai-usagebar.url = "github:akitaonrails/ai-usagebar";
   };
 
   outputs =
-    inputs@{ nixpkgs
-    , antigravity-nix
-    , chaotic
-    , home-manager
-    , lanzaboote
-    , monique
-    , niri
-    , nix-flatpak
-    , nixos-hardware
-    , stylix
-    , zen-browser
-    , ...
+    inputs@{
+      nixpkgs,
+      antigravity-nix,
+      chaotic,
+      home-manager,
+      lanzaboote,
+      monique,
+      niri,
+      nix-flatpak,
+      nixos-hardware,
+      stylix,
+      zen-browser,
+      ...
     }:
     {
       nixosConfigurations = {
