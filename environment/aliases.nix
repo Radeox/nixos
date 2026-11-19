@@ -16,7 +16,7 @@
     g = "lazygit";
     ll = "ls -l";
     p = "ps aux | grep ";
-    t = "tuios";
+    h = "herdr";
     x = "yazi";
     rgrep = "rg";
     sl = "ls";

@@ -66,7 +66,6 @@
     telegram-desktop
     thunderbird
     tree-sitter
-    tuios
     udiskie
     ungoogled-chromium
     unzip

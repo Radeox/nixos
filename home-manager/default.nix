@@ -3,13 +3,13 @@
   imports = [
     ./ghostty.nix
     ./git.nix
+    ./herdr.nix
     ./neovim.nix
     ./niri.nix
     ./noctalia.nix
     ./programs.nix
     ./shell.nix
     ./theme.nix
-    ./tuios.nix
     ./xdg.nix
     ./xwayland.nix
   ];

@@ -58,7 +58,7 @@ The configuration targets two x86_64 hosts configured in [`flake.nix`](file:///e
     ├── git.nix           # Git user profile and Lazygit configuration
     ├── theme.nix         # Stylix dark theme (gruvbox-material-dark-medium) and typography
     ├── programs.nix      # User desktop packages (Zen Browser, bat, Antigravity)
-    ├── tuios.nix         # TUIOS terminal workspace environment
+    ├── herdr.nix         # Herdr configuration (gruvbox theme, system toast notifications)
     ├── xdg.nix           # Default MIME associations and XDG user directories
     └── xwayland.nix      # Xwayland-satellite systemd user service for X11 compatibility
 ```
