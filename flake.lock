@@ -406,6 +406,26 @@
         "type": "github"
       }
     },
+    "nix-craftapps": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1794806634,
+        "narHash": "sha256-pEsyilE+Wg7ILsDxrj6Jr+DvgSkRwkui8Mu4YEcM7bE=",
+        "owner": "olafkfreund",
+        "repo": "nix-craftapps",
+        "rev": "ed9067144859fce25a3c37df0d0bd0589676cd22",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olafkfreund",
+        "repo": "nix-craftapps",
+        "type": "github"
+      }
+    },
     "nix-flatpak": {
       "locked": {
         "lastModified": 1790428548,
@@ -586,6 +606,7 @@
         "lanzaboote": "lanzaboote",
         "monique": "monique",
         "niri": "niri",
+        "nix-craftapps": "nix-craftapps",
         "nix-flatpak": "nix-flatpak",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_3",

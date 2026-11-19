@@ -50,6 +50,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Craftapps
+    nix-craftapps = {
+      url = "github:olafkfreund/nix-craftapps";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Monique
     monique = {
       url = "github:ToRvaLDz/monique";

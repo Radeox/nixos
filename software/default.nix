@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./craftapps.nix
     ./extra.nix
     ./flatpak.nix
     ./gaming.nix
