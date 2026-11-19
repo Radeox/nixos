@@ -66,6 +66,7 @@
         "Mod+N".action.spawn = "spotify";
         "Mod+Y".action.spawn = "nautilus";
         "Mod+B".action.spawn = "zen-beta";
+        "Ctrl+Shift+T".action.spawn = "herdr-app";
 
         # Close window
         "Mod+Q".action.close-window = { };

@@ -41,7 +41,7 @@
 
         # Text files
         "text/plain" = [ "org.gnome.TextEditor.desktop" ];
-        "text/markdown" = [ "org.gnome.TextEditor.desktop" ];
+        "text/markdown" = [ "zen-beta.desktop" ];
 
         # Calculator
         "x-scheme-handler/calculator" = [ "org.gnome.Calculator.desktop" ];
@@ -52,6 +52,7 @@
         "x-scheme-handler/calculator" = [ "org.gnome.Calculator.desktop" ];
         "inode/directory" = [ "org.gnome.Nautilus.desktop" ];
         "video/mp4" = [ "vlc.desktop" ];
+        "text/markdown" = [ "zen-beta.desktop" ];
       };
     };
 

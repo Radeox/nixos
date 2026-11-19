@@ -20,7 +20,7 @@ let
   ];
   desktopId = app: "${appsJson.${app}.desktopId}.desktop";
 
-  # Exact MIME strings from each app's desktop file. Apps absent here (effectcraft, craft-anything) claim nothing.
+  # Exact MIME strings from each app's desktop file
   defaults = {
     wordcraft = [
       "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
