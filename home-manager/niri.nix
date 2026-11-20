@@ -5,7 +5,10 @@
 
     settings = {
       includes = [
-        { path = "monitors.kdl"; required = false; }
+        {
+          path = "monitors.kdl";
+          required = false;
+        }
       ];
 
       input = {
@@ -66,7 +69,7 @@
         "Mod+N".action.spawn = "spotify";
         "Mod+Y".action.spawn = "nautilus";
         "Mod+B".action.spawn = "zen-beta";
-        "Ctrl+Shift+T".action.spawn = "herdr-app";
+        "Mod+G".action.spawn = "herdr-app";
 
         # Close window
         "Mod+Q".action.close-window = { };
@@ -245,15 +248,15 @@
           clip-to-geometry = true;
         }
         {
-          matches = [{ title = "^Picture-in-Picture$"; }];
+          matches = [ { title = "^Picture-in-Picture$"; } ];
           open-floating = true;
         }
         {
-          matches = [{ app-id = "org.gnome.Calculator"; }];
+          matches = [ { app-id = "org.gnome.Calculator"; } ];
           open-floating = true;
         }
         {
-          matches = [{ app-id = "com.mitchellh.ghostty"; }];
+          matches = [ { app-id = "com.mitchellh.ghostty"; } ];
           draw-border-with-background = false;
           background-effect = {
             blur = true;
