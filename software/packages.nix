@@ -37,6 +37,7 @@
     localsend
     loupe
     mariadb.client
+    mongodb-compass
     mongodb-tools
     nautilus
     nautilus-python
