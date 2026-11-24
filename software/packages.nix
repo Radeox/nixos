@@ -33,12 +33,11 @@
     hyprpicker
     imagemagick
     isort
+    kicad
     killall
     localsend
     loupe
     mariadb.client
-    mongodb-compass
-    mongodb-tools
     nautilus
     nautilus-python
     nil

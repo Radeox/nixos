@@ -3,9 +3,9 @@
   imports = [
     ./craftapps.nix
     ./extra.nix
-    ./flatpak.nix
     ./gaming.nix
     ./login.nix
+    ./mongo.nix
     ./netbird.nix
     ./niri.nix
     ./packages.nix
